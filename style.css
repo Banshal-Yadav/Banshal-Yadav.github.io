@@ -81,14 +81,19 @@ form {
 
 #search_bar {
     border-style: solid;
-    border-color: black;
+    border-color: rgb(107, 111, 91);
     padding-left: 10px;
     border-width: 0.2rem;;
     height: 4.4rem;
     width: 12rem;
     outline: none;
     border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;   
+}
+
+#search_bar:hover {
+    box-shadow: rgb(189, 124, 163)  -5px 20px 80px;
+    transition-duration: 0.5s ;
 }
 
 #search_btn{
@@ -96,13 +101,19 @@ form {
     color: white;
     margin-left: -0.9rem;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(107, 111, 91);
     border-width: 0.2rem;;
     height: 4.6rem;
     width: 4.5rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.search_title {
+    text-shadow: black  5px 10px 50px;
+}
+
+
 
 
 .card_container { 
@@ -113,6 +124,7 @@ form {
 }
 
 .card_wrapper {
+    display: grid;
     margin-top: -5rem;
     height: fit-content;
     border-radius: 0.61rem;
@@ -206,4 +218,165 @@ form {
     margin-left: 10px;
 }
 
+/* 600px to 800px */
+@media (min-width: 600px) and (max-width: 800px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .card_style {
+        width: 100%;
+        margin: 0;
+    }
+     
+}
+
+/* --------------------------------------- */
+
+/* 570px to 620px searchbar and logo */
+@media (min-width:570px) and (max-width: 620px){
+    .header_main {
+        padding-left: 2rem;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    .search_title {
+        padding-top: 0.5rem;
+    }
+
+    /* search button bottom border fix */
+    #search_btn {
+        height: 4.7rem ;
+    }
+}
+
+/* 500px to 569px */
+@media (min-width:500px) and (max-width: 569px){
+    .header_main {
+        padding-left: 2rem;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .search_title {
+        padding-top: 1.2rem;
+    }
+    /* search button bottom border fix */
+    #search_btn {
+        height: 4.7rem ;
+    }
+}
+
+/* 200px to 499px */
+@media (min-width:200px) and (max-width: 499px){
+    .banner {
+        padding-top: 20px;
+        height: 38px;
+    }
+    .header_two {
+        margin-top: 1rem;
+        height: 200px;
+    }
+    .card_container {
+        padding-top: 1.3rem;
+    }
+    .header_main {
+        height: 15rem;
+        padding-left: 2rem;
+        font-size: 20px;
+        display: grid;
+        grid-template-rows: repeat(2, 0.2fr);
+    } 
+    .search_title {
+        margin-left: -4rem;
+       margin-top: -60px;
+       display:flex;
+       justify-content: center;
+    }
+    /* search button bottom border fix */
+    #search_btn {
+        height: 4.7rem ;
+    }
+    
+}
+/* ------------------------------------------- */
+
+/* 400px to 599 */
+@media (min-width: 400px) and (max-width: 599px){
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .header_options {
+        font-size: 18px;
+    }
+    .header_two {
+        gap: 30px;
+    }
+
+}
+
+
+
+/* 300px to 399px */
+@media (min-width: 300px) and (max-width: 399px){
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .header_options {
+        font-size: 14px;
+    }
+    .header_two {
+        gap: 20px;
+    }
+   
+     #search_bar {
+        margin-left: 55px;
+        width: 100px;
+        height: 3rem;
+     }
+     #search_btn {
+        height: 3.3rem;
+     }
+     .search_title {
+        padding-left: 30px;
+     }
+   
+}
+
+/* 100px to 299px */
+@media (min-width: 100px) and (max-width: 299px){
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .banner {
+        padding-top: 20px;
+        height: 60px;
+    }
+    .header_two {
+        gap:5px;
+    }
+    .header_options {
+        font-size: 13px;;
+    }
+    #search_bar {
+        margin-left: 80px;
+        width: 70px;
+        height: 3rem;
+     }
+     #search_btn {
+        height: 3.34rem;
+     }
+     .search_title {
+        padding-left: 50px;
+     }
+}
 
