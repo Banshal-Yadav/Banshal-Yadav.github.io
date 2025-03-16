@@ -20,9 +20,6 @@
     background-color: rgb(235, 229, 194) ;  /* rgb(255, 120, 155) */
 }
 
-.header_options {
-    height: 40px;
-}
 
 .header_main {
     height: 15rem;
@@ -49,17 +46,18 @@
 
 .header_options {
     padding: 5px;
+    height: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     /* background-color: rgb(255, 160, 122);  */
     border-radius: 6px;
+    border-style:solid;
+    border-width: 1px;
     background-color: rgb(240, 190, 12);
 }
 
-
 /* SEARCH */
-
 .search_wrapper {
     margin-top: 5rem;
     padding-top: 5px;
@@ -103,7 +101,7 @@ form {
     border-style: solid;
     border-color: rgb(107, 111, 91);
     border-width: 0.2rem;;
-    height: 4.6rem;
+    height: 4.8rem;
     width: 4.5rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -229,6 +227,9 @@ form {
         width: 100%;
         margin: 0;
     }
+    #search_btn {
+        height: 4.8rem;
+     }
      
 }
 
@@ -248,16 +249,14 @@ form {
     }
 
     /* search button bottom border fix */
-    #search_btn {
-        height: 4.7rem ;
-    }
+    
 }
 
 /* 500px to 569px */
 @media (min-width:500px) and (max-width: 569px){
     .header_main {
-        padding-left: 2rem;
-        font-size: 20px;
+        padding-left: 1rem;   /* search-bar left space*/
+        font-size: 24px;   /* logo size */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     } 
@@ -284,9 +283,9 @@ form {
         padding-top: 1.3rem;
     }
     .header_main {
-        height: 15rem;
-        padding-left: 2rem;
-        font-size: 20px;
+        height: 16rem;
+        padding-left: 2rem;  /* search-bar left space*/
+        font-size: 25px;   /* logo size */
         display: grid;
         grid-template-rows: repeat(2, 0.2fr);
     } 
@@ -317,6 +316,9 @@ form {
     .header_two {
         gap: 30px;
     }
+    #search_btn {
+        height: 4.8rem;
+     }
 
 }
 
@@ -330,7 +332,7 @@ form {
         gap: 1rem;
     }
     .header_options {
-        font-size: 14px;
+        font-size: 14px; /* font size of about me etc section*/
     }
     .header_two {
         gap: 20px;
@@ -342,7 +344,7 @@ form {
         height: 3rem;
      }
      #search_btn {
-        height: 3.3rem;
+        height: 3.4rem;
      }
      .search_title {
         padding-left: 30px;
