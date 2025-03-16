@@ -350,8 +350,8 @@ footer {
         grid-template-rows: repeat(2, 0.2fr);
     } 
     .search_title {
-        margin-left: -4rem;
-       margin-top: -60px;
+        margin-left: -3rem;
+        margin-top: -60px;
        display:flex;
        justify-content: center;
     }
