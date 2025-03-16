@@ -120,8 +120,6 @@ form {
 }
 
 
-
-
 .card_container { 
     margin-top: -2.2rem;
     padding: 0.5rem;
@@ -252,6 +250,31 @@ form {
     display: none;
 }
 
+footer {
+    height: 10rem;
+    background-color: rgb(79, 85, 79);
+}
+
+.footer_txt {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.footer_txt b {
+    padding: 0.4rem;
+    color: black;
+    padding: 6px;
+    background-color: rgb(200, 0, 255); 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 15px;
+    font-weight: 490;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* 600px to 800px */
 @media (min-width: 600px) and (max-width: 800px) {
