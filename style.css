@@ -31,6 +31,7 @@
      background-color: rgb(210, 209, 205) ;/* pallet -> rgb(248, 243, 217) or rgb(155, 160, 122) */
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    
 }
 
 .header_main h2 {
@@ -44,9 +45,9 @@
     justify-content: center;
 }
 .header_options:hover {
-    box-shadow: rgb(10, 10, 10)  -5px 20px 80px;
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
+    /* box-shadow: rgb(39, 38, 38)  0px 10px 40px; */
+    transform: translateY(-3px);
+    transition-duration: 0.1s;
 }
 
 .header_options {
@@ -77,17 +78,17 @@
     padding-top: 20px;
 }
 
-
 form {
     width: 20rem;
 }
+
 
 #search_bar {
     border-style: solid;
     border-color: rgb(107, 111, 91);
     padding-left: 10px;
     border-width: 0.1rem;;
-    height: 2.5rem;
+    height: 2.65rem;
     width: 12rem;
     outline: none;
     border-top-left-radius: 2rem;
@@ -95,14 +96,16 @@ form {
 }
 
 #search_bar:hover {
-    box-shadow: rgb(189, 124, 163)  -5px 20px 80px;
-    transition-duration: 0.5s ;
+    /* box-shadow: rgb(189, 124, 163)  -5px 20px 80px; */
+    /* transform : translateY(-4px); */
+    height: 3rem;
+    transition-duration: 0.1s;
 }
 
 #search_btn{
     background-color: rgb(50, 49, 46);
     color: white;
-    margin-left: -0.9rem;
+    margin-left: -0.1rem;
     border-style: solid;
     border-color: rgb(50, 49, 46);
     border-width: 0.2rem;;
@@ -115,15 +118,11 @@ form {
     outline: none;
 }
 
-.search_title {
-    text-shadow: black  5px 10px 50px;
-}
-
-
+/* background of the card wrapper */
 .card_container { 
     margin-top: -2.2rem;
     padding: 0.5rem;
-    background-color: rgb(185, 178, 138);
+    background-color: white; /* rgb(185, 178, 138) */
     height:500px;
 }
 
@@ -132,8 +131,8 @@ form {
     margin-top: -5rem;
     height: fit-content;
     border-radius: 0.61rem;
-    background-color: rgb(185, 178, 138, 0.3);
-    backdrop-filter: blur(6px);
+    background-color: white; /*rgb(185, 178, 138)*/
+    /* backdrop-filter: blur(6px); */ /* blur effect */
     outline-style:solid;
     outline-width: 0.1rem;
     outline-color: rgb(91, 93, 85);
@@ -401,7 +400,7 @@ footer {
      #search_bar {
         margin-left: 55px;
         width: 100px;
-        height: 2rem;
+        height: 2.65rem;
      }
      #search_btn {
         height: 2.4rem;
@@ -432,7 +431,7 @@ footer {
     #search_bar {
         margin-left: 80px;
         width: 70px;
-        height: 2rem;
+        height: 2.65rem;
      }
      #search_btn {
         height: 2.34rem;
