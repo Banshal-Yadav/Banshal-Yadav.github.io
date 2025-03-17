@@ -15,7 +15,7 @@
     /* backdrop-filter: blur(5px); */
 }
 .header {
-    height: 26rem;
+    height: 19.5rem;
     width: 100%;
     background-color: rgb(140, 151, 114) ;  /* rgb(255, 120, 155) */
 }
@@ -31,7 +31,6 @@
      background-color: rgb(210, 209, 205) ;/* pallet -> rgb(248, 243, 217) or rgb(155, 160, 122) */
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    
 }
 
 .header_main h2 {
@@ -39,7 +38,7 @@
 }
 
 .header_two {
-    margin-top: 0.8rem;
+    margin-top: 01rem;
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -120,7 +119,6 @@ form {
 
 /* background of the card wrapper */
 .card_container { 
-    margin-top: -2.2rem;
     padding: 0.5rem;
     background-color: white; /* rgb(185, 178, 138) */
     height:500px;
@@ -128,7 +126,6 @@ form {
 
 .card_wrapper {
     display: grid;
-    margin-top: -5rem;
     height: fit-content;
     border-radius: 0.61rem;
     background-color: white; /*rgb(185, 178, 138)*/
