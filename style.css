@@ -5,7 +5,6 @@
 }
 
 
-
 .banner {
     height: 20px;
     display: flex;
@@ -14,19 +13,20 @@
     padding: 5px;
     border-radius: 10px;
     background-color: rgb(155, 190, 122, 0.3); /*  */
-    /* backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
 }
+
 .header {
-    height: 19.5rem;
+    height: 15rem;
     width: 100%;
     background-color: rgb(232, 231, 150) ;  /* rgb(255, 120, 155) */
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    /* border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
 }
 
 
 .header_main {
-    height: 19.2rem;
+    height: 10rem;
     width:100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
@@ -39,11 +39,11 @@
 }
 
 .header_main h2 {
-    padding-top:  5rem;
+    padding-top:  2rem;
 }
 
 .header_two {
-    margin-top: -3rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -72,17 +72,18 @@
 
 /* SEARCH */
 .search_wrapper {
-    margin-top: 5.5rem;
-    padding-top: 5px;
-    margin-left: 0;
-    outline: none;
-    border: none;
+    background-color: rgb(231, 236, 241);
+    padding: 1rem;
+    margin-bottom: -2rem;
+    display: flex;
     justify-content: center;
-    
+   
 }
 
-.search_container {
-    padding-top: 20px;
+#search_container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -90,23 +91,23 @@ form {
 }
 
 #search_bar {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-style: solid;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(50, 49, 46);
+    border-width: 0.01rem;
     padding-left: 10px;
-    border-width: 0.2rem;;
     height: 2.65rem;
     width: 12rem;
     outline: none;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;   
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;   
 }
 
 #search_bar:hover {
     /* box-shadow: rgb(189, 124, 163)  -5px 20px 80px; */
     /* transform : translateY(-4px); */
-    height: 3rem;
-    transition-duration: 0.1s;
+    background-color: rgb(181, 214, 227);
+    transition-duration: 0.5s;
 }
 
 #search_btn{
@@ -115,14 +116,20 @@ form {
     margin-left: -0.1rem;
     border-style: solid;
     border-color: rgb(50, 49, 46);
-    border-width: 0.2rem;;
-    height: 2.8rem;
+    border-width: 0.2rem;
+    height: 2.6rem;
     width: 4.5rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     border-top-left-radius: 0.2rem;
     border-bottom-left-radius: 0.2rem;
-    outline: none;
+}
+
+#search_btn:hover {
+    /* box-shadow: rgb(189, 124, 163)  -5px 20px 80px; */
+    /* transform : translateY(-4px); */
+    background-color: rgb(181, 214, 227);
+    transition-duration: 0.5s;
 }
 
 /* cards */
@@ -134,7 +141,6 @@ form {
     font-weight: 100;
     padding-left: 3rem;
     padding-top: 2.5rem;
-    border-radius: 1rem;;
 }
 
 /* background of the card wrapper */
@@ -373,15 +379,9 @@ footer {
         padding-left: 20px;
     }
     .header_main {
-        width: 100%;
-        font-size: 35px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     } 
 
     .search_title {
-        padding-top: 0.4rem;
-        font-size: 30px;;
     }
     .recents_container {
         width: 90%;
@@ -395,12 +395,8 @@ footer {
         padding-left: 25px;
     }
     .header_main {
-        font-size: 24px;   /* logo size */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     } 
     .search_title {
-        padding-top: 0.4rem;
     }
     /* search button bottom border fix */
     #search_btn {
@@ -416,30 +412,25 @@ footer {
         height: 38px;
     }
     .header_two {
-        margin-top: -3.5rem;
+        margin-top: 1.5rem;
         height: 200px;
     }
     .card_container {
         padding-top: 1.3rem;
     }
     .header_main {
-        height: 19rem;
-        font-size: 25px;   /* logo size */
-        display: grid;
-        grid-template-rows: repeat(2, 0.2fr);
+        
     } 
     .search_title {
-        margin-left: -3rem;
-        margin-top: -60px;
-        display:flex;
-        justify-content: center;
     }
     /* search button bottom border fix */
     #search_btn {
         height: 2.7rem ;
     }
-    .search_container{
-        padding-left: 20px;
+    .search_wrapper {
+        padding: 0.1rem;
+        display: flex;
+        justify-content: center;
     }
     
 }
@@ -453,7 +444,6 @@ footer {
         gap: 1rem;
     }
     .search_title{
-        padding-left: 20px;
     }
     .header_options {
         font-size: 18px;
@@ -482,6 +472,15 @@ footer {
         gap: 0.5rem;
         padding: 15px;
     }
+    .header_main{
+        height: 7.5rem;
+    }
+    .header {
+        height: 12rem;
+    }
+    .search_title {
+        font-size: 30px;;
+    }
     .header_options {
         font-size: 14px; /* font size of about me etc section*/
     }
@@ -490,18 +489,18 @@ footer {
     }
    
      #search_bar {
-        margin-left: 55px;
         width: 100px;
         height: 2.65rem;
      }
      #search_btn {
-        height: 3rem;
+        height: 2.85rem;
      }
-     .search_title {
-        padding-left: 30px;
-     }
+    
      .recents_container {
         width: 90%;
+     }
+     .card_sec_heading {
+        font-size: 28px;;
      }
    
 }
@@ -517,6 +516,15 @@ footer {
         padding-top: 20px;
         height: 60px;
     }
+    .header_main{
+        height: 6.5rem;
+    }
+    .header {
+        height: 11rem;
+    }
+    .search_title {
+        font-size: 25px;;
+    }
     .header_two {
         gap:5px;
     }
@@ -524,16 +532,13 @@ footer {
         font-size: 13px;;
     }
     #search_bar {
-        margin-left: 80px;
         width: 70px;
         height: 2.65rem;
      }
      #search_btn {
-        height: 3rem;
+        height: 2.85rem;
      }
-     .search_title {
-        padding-left: 50px;
-     }
+     
 
      .recents_container {
         width: 90%;
