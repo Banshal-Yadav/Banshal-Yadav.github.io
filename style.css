@@ -4,6 +4,8 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 .banner {
     height: 20px;
     display: flex;
@@ -141,6 +143,7 @@ form {
     outline-style:solid;
     outline-width: 0.1rem;
     outline-color: rgb(91, 93, 85);
+    box-sizing: border-box;
 }
 .card {
     height:fit-content ;
@@ -164,6 +167,7 @@ form {
     padding: 10px;
     height: fit-content;
     min-width: 100px;
+    box-sizing: border-box;
 
     font-size: large;
     background-color: rgb(219, 234, 218);  /* rgb(240, 128, 12); */
@@ -363,9 +367,10 @@ footer {
         padding-top: 0.4rem;
         font-size: 30px;;
     }
+    .recents_container {
+        width: 90%;
+     }
 
-    /* search button bottom border fix */
-    
 }
 
 /* 500px to 569px */
@@ -385,6 +390,7 @@ footer {
     #search_btn {
         height: 2.7rem ;
     }
+   
 }
 
 /* 200px to 499px */
@@ -405,16 +411,20 @@ footer {
         font-size: 25px;   /* logo size */
         display: grid;
         grid-template-rows: repeat(2, 0.2fr);
+        padding-left: 20px;
     } 
     .search_title {
         margin-left: -3rem;
         margin-top: -60px;
-       display:flex;
-       justify-content: center;
+        display:flex;
+        justify-content: center;
     }
     /* search button bottom border fix */
     #search_btn {
         height: 2.7rem ;
+    }
+    .search_container{
+        padding-left: 20px;
     }
     
 }
@@ -523,4 +533,5 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
     }
+    
 }
