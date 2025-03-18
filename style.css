@@ -349,15 +349,19 @@ footer {
 
 /* 570px to 620px searchbar and logo */
 @media (min-width:570px) and (max-width: 620px){
+    .search_wrapper{
+        padding-left: 20px;
+    }
     .header_main {
-        padding-left: 2rem;
-        font-size: 30px;
+        width: 100%;
+        font-size: 35px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     } 
 
     .search_title {
-        padding-top: 0.5rem;
+        padding-top: 0.4rem;
+        font-size: 30px;;
     }
 
     /* search button bottom border fix */
@@ -366,14 +370,16 @@ footer {
 
 /* 500px to 569px */
 @media (min-width:500px) and (max-width: 569px){
+    .search_wrapper{
+        padding-left: 25px;
+    }
     .header_main {
-        padding-left: 1rem;   /* search-bar left space*/
         font-size: 24px;   /* logo size */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     } 
     .search_title {
-        padding-top: 1.2rem;
+        padding-top: 0.4rem;
     }
     /* search button bottom border fix */
     #search_btn {
@@ -396,7 +402,6 @@ footer {
     }
     .header_main {
         height: 19rem;
-        padding-left: 2rem;  /* search-bar left space*/
         font-size: 25px;   /* logo size */
         display: grid;
         grid-template-rows: repeat(2, 0.2fr);
@@ -419,8 +424,11 @@ footer {
 @media (min-width: 400px) and (max-width: 599px){
     .card {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+    .search_title{
+        padding-left: 20px;
     }
     .header_options {
         font-size: 18px;
@@ -432,16 +440,22 @@ footer {
         height: 2.9rem;
      }
 
+     .recents_container {
+        width: 90%;
+     }
+
 }
 
 
 
 /* 300px to 399px */
 @media (min-width: 300px) and (max-width: 399px){
+    
     .card {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+        padding: 15px;
     }
     .header_options {
         font-size: 14px; /* font size of about me etc section*/
@@ -456,10 +470,13 @@ footer {
         height: 2.65rem;
      }
      #search_btn {
-        height: 2.4rem;
+        height: 3rem;
      }
      .search_title {
         padding-left: 30px;
+     }
+     .recents_container {
+        width: 90%;
      }
    
 }
@@ -468,7 +485,7 @@ footer {
 @media (min-width: 100px) and (max-width: 299px){
     .card {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
     .banner {
@@ -487,10 +504,15 @@ footer {
         height: 2.65rem;
      }
      #search_btn {
-        height: 2.34rem;
+        height: 3rem;
      }
      .search_title {
         padding-left: 50px;
+     }
+
+     .recents_container {
+        width: 90%;
+        height: 20px;
      }
 }
 
