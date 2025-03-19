@@ -74,16 +74,16 @@
 .search_wrapper {
     background-color: rgb(231, 236, 241);
     padding: 1rem;
-    margin-bottom: -2rem;
     display: flex;
     justify-content: center;
    
 }
 
 #search_container {
-    padding-top: 10px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    gap:10px;
 }
 
 form {
@@ -135,12 +135,13 @@ form {
 /* cards */
 
 .card_sec_heading {
-    background-color: rgb(231, 236, 241);
+    background-color: rgb(213, 214, 171);
     font-family: monospace;
     font-size: 40px;
     font-weight: 100;
-    padding-left: 3rem;
-    padding-top: 2.5rem;
+    padding: 1.5rem 0rem 0.5rem 4rem;
+    /* padding-top: 2rem;
+    padding-left: 3rem; */
 }
 
 /* background of the card wrapper */
@@ -148,9 +149,8 @@ form {
     display:flex;
     padding: 3%;
     padding-top: 10px;
-    background-color: white; /* rgb(185, 178, 138) */
+    background-color: rgb(213, 214, 171); /* rgb(185, 178, 138) */
     height: auto;
-    margin-left: 10px;
 }
 
 .card_wrapper {
@@ -473,19 +473,21 @@ footer {
         padding: 15px;
     }
     .header_main{
-        height: 7.5rem;
+        height: 6.5rem;
     }
     .header {
-        height: 12rem;
+        height: 9.5rem;
     }
     .search_title {
-        font-size: 30px;;
+        font-size: 25px;;
     }
     .header_options {
-        font-size: 14px; /* font size of about me etc section*/
+        padding: 0.5rem;
+        font-size: 12px; /* font size of about me etc section*/
     }
     .header_two {
-        gap: 20px;
+        margin: 0.3rem;
+        gap: 10px;
     }
    
      #search_bar {
@@ -499,9 +501,14 @@ footer {
      .recents_container {
         width: 90%;
      }
+     
      .card_sec_heading {
-        font-size: 28px;;
-     }
+        background-color: rgb(213, 214, 171);
+        font-family: monospace;
+        font-size: 22px;
+        font-weight: 200;
+        padding: 1.5rem 10rem 0.5rem 2rem;
+    }
    
 }
 
