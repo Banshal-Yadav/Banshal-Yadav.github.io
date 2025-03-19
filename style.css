@@ -73,6 +73,7 @@
 .search_wrapper {
     background-color: rgb(102, 103, 96);
     padding: 1rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: center;
    
@@ -93,41 +94,32 @@ form {
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border-color: rgb(50, 49, 46);
-    border-width: 0.01rem;
+    border-width: 0.1rem;
     padding-left: 10px;
-    height: 2.65rem;
-    width: 12rem;
+    height: 3rem;
+    width: 10rem;
     outline: none;
     border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;   
+    border-bottom-left-radius: 0.5rem;  
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; 
 }
 
 #search_bar:hover {
-    /* box-shadow: rgb(189, 124, 163)  -5px 20px 80px; */
-    /* transform : translateY(-4px); */
     background-color: rgb(181, 214, 227);
-    transition-duration: 0.5s;
+    width: 15rem;
+    transition-duration: 0.5s ;
 }
 
 #search_btn{
-    background-color: rgb(50, 49, 46);
-    color: white;
-    margin-left: -0.1rem;
+    background-color: transparent; /* rgb(50, 49, 46) */
+    margin-left: -4.3rem;
     border-style: solid;
-    border-color: rgb(50, 49, 46);
-    border-width: 0.2rem;
-    height: 2.6rem;
-    width: 4.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    border-top-left-radius: 0.2rem;
-    border-bottom-left-radius: 0.2rem;
+    border-color: transparent;
+    border-width: 0rem;
 }
 
 #search_btn:hover {
-    /* box-shadow: rgb(189, 124, 163)  -5px 20px 80px; */
-    /* transform : translateY(-4px); */
-    background-color: rgb(181, 214, 227);
     transition-duration: 0.5s;
 }
 
@@ -405,16 +397,9 @@ footer {
         margin-top: 1.5rem;
         height: 200px;
     }
-    .card_container {
-        padding-top: 1.3rem;
-    }
     
-    /* search button bottom border fix */
-    #search_btn {
-        height: 2.7rem ;
-    }
+    
     .search_wrapper {
-        padding: 0.1rem;
         display: flex;
         justify-content: center;
     }
@@ -429,6 +414,14 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+    .banner {
+        padding: 4px;
+        font-size: 9px;
+        height: 10px;
+    }
+    .search_wrapper {
+        padding-left: 60px;
+    }
     
     .header_options {
         font-size: 18px;
@@ -437,7 +430,7 @@ footer {
         gap: 30px;
     }
     #search_btn {
-        height: 2.9rem;
+        padding: 15px;
      }
 
      .recents_container {
@@ -459,7 +452,7 @@ footer {
         height: 6.5rem;
     }
     .header {
-        height: 9.5rem;
+        height: 7.5rem;
     }
     .search_title {
         font-size: 25px;;
@@ -469,16 +462,20 @@ footer {
         font-size: 12px; /* font size of about me etc section*/
     }
     .header_two {
-        margin: 0.3rem;
+        margin: rem;
         gap: 10px;
+    }
+    .search_wrapper {
+        padding-top: 3.5rem;;
     }
    
      #search_bar {
+        margin-left: 70px;;
         width: 100px;
         height: 2.65rem;
      }
      #search_btn {
-        height: 2.85rem;
+        padding-left: 40px;
      }
     
      .recents_container {
