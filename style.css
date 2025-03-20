@@ -61,6 +61,21 @@
 }
 
 .nav_txt {
+    background: linear-gradient(45deg,rgb(227, 211, 211), rgb(231, 235, 246) , rgb(234, 200, 198));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+    font-size: 17px;;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.nav_txt:hover {
+    background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 1%;
     font-size: 17px;;
     color: white;
@@ -452,7 +467,7 @@ footer {
     }
 
     .logo {
-        background: linear-gradient(45deg,rgb(165, 83, 187), rgb(47, 90, 142) , rgb(160, 128, 234));
+    background: linear-gradient(45deg,rgb(165, 83, 187), rgb(47, 90, 142) , rgb(160, 128, 234));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
