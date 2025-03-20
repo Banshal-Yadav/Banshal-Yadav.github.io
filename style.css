@@ -125,7 +125,9 @@ form {
     margin-left: -4.3rem;
     border-style: solid;
     border-color: transparent;
-    border-width: 0rem;
+    font-size: 20px;
+    color: rgb(74, 74, 74);
+    z-index: 10;
 }
 
 /* cards */
@@ -333,16 +335,16 @@ form {
 .working_on_container {
     height:auto;
     padding: 1rem;
-    background-image: repeating-linear-gradient(60deg, rgb(32, 31, 31), rgb(53, 53, 53));
+    background-image: repeating-linear-gradient(85deg, rgb(32, 31, 31) , rgb(28, 28, 28));
     backdrop-filter: blur(12px);
 }
 .working_on_heading {
     color: lightgray;
     font-family: monospace;
     font-size: 40px;
-    font-weight: 100;
-    padding-left: 3rem;
-    padding-top: 2.5rem;
+    font-weight: 200;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
 }
 
 .working_on_info {
@@ -352,7 +354,7 @@ form {
 
 footer {
     height: auto;
-    background-image: repeating-linear-gradient(60deg, rgb(45, 44, 44), rgb(123, 87, 87), rgb(55, 53, 53));
+    background-image: repeating-linear-gradient(100deg, rgb(25, 25, 25), rgb(49, 94, 142),rgb(38, 110, 77), rgb(39, 39, 39));
 }
 
 .footer_txt {
@@ -470,6 +472,16 @@ footer {
     }
     #search_btn {
         padding: 15px;
+    }
+    #search_btn{
+        background-color: transparent; /* rgb(50, 49, 46) */
+        margin-left: -4.3rem;
+        border-style: solid;
+        border-color: transparent;
+        margin-top: -0.35rem;
+        font-size: 20px;
+        color: rgb(74, 74, 74);
+        z-index: 10;
     }
 
     #search_bar {
