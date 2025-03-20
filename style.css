@@ -45,7 +45,7 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     padding-left: 3%;
-    padding-right: 10%;
+    padding-right: 20%;
     color: rgb(188, 214, 224);
 }
 
@@ -61,12 +61,12 @@
 }
 
 .nav_txt {
-    background: linear-gradient(45deg,rgb(227, 211, 211), rgb(231, 235, 246) , rgb(234, 200, 198));
+    background: linear-gradient(45deg,rgb(183, 106, 106), rgb(57, 88, 172) , rgb(234, 200, 198));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1%;
-    font-size: 17px;;
+    font-size: 18px;;
     color: white;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -336,9 +336,10 @@ form {
 }
 
 .recents_heading {
-    background-color: rgb(57, 92, 196);
-    border-color: black;
-    color:rgb(255, 255, 255); /* heading text color*/
+    background-color: rgb(78, 79, 81);
+    border-color: rgb(129, 128, 128);
+    color:rgb(188, 188, 188); /* heading text color*/
+    font-size: 20px;;
     border-style: solid;
     padding:0px 18px 0px 18px ;
     border-radius: 0.9rem;;
@@ -475,7 +476,7 @@ footer {
         font-size: 1.8rem;
         font-weight: 500;
         padding-left: 2%;
-        padding-right: 2%;
+        padding-right: 3%;
     }
     
     .banner {
@@ -491,7 +492,7 @@ footer {
         padding-bottom: 15px;
     }
     .nav_txt{
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .header_options {
