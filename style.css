@@ -49,7 +49,10 @@
     color: rgb(188, 214, 224);
 }
 
+
+
 .nav {
+    
     padding: 0.2rem;
     height: fit-content;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,7 +64,7 @@
 }
 
 .nav_txt {
-    background: linear-gradient(45deg,rgb(183, 106, 106), rgb(57, 88, 172) , rgb(234, 200, 198));
+    background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -103,6 +106,7 @@
 }
 
 #search_container {
+    
     padding: 1rem;
     display: flex;
     justify-content: center;
