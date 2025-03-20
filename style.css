@@ -453,7 +453,7 @@ footer {
 
     .logo {
         font-size: 1.8rem;
-        font-weight: 800;
+        font-weight: 500;
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -496,6 +496,13 @@ footer {
      }
     #search_bar:hover {
         width: 100%;
+    }
+    .card_sec_heading {
+        background-color: rgb(213, 214, 171);
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: 300;
+        padding: 1.5rem 10rem 0.5rem 2rem;
     }
     
     .recents {
