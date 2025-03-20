@@ -40,14 +40,15 @@
 }
 
 .logo {
+    font-size: 1rem;;
     padding-left: 10%;
     padding-right: 25%;
     color: skyblue;
 }
 
 .nav {
-    padding: 1rem;
-    height: 2rem;
+    padding: 5px;
+    height: fit-content;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 350;
@@ -55,6 +56,10 @@
     border-style:solid;
     border-width: 1px;
 }
+.nav_txt_container {
+
+}
+
 .nav_txt {
     color: white;
     text-decoration: none;
@@ -416,15 +421,20 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     
     .banner {
         padding: 4px;
         font-size: 9px;
         height: 10px;
     }
-    .search_wrapper {
-        padding-left: 60px;
-    }
+   
     
     .header_options {
         font-size: 18px;
