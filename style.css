@@ -452,6 +452,11 @@ footer {
     }
 
     .logo {
+        background: linear-gradient(45deg,rgb(165, 83, 187), rgb(47, 90, 142) , rgb(160, 128, 234));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
         font-size: 1.8rem;
         font-weight: 500;
         padding-left: 2%;
