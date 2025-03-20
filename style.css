@@ -36,7 +36,7 @@
 }
 
 .logo {
-    background: linear-gradient(45deg,rgb(59, 30, 30), rgb(32, 79, 99) , rgb(78, 3, 254));
+    background: linear-gradient(45deg,rgb(97, 30, 30), rgb(32, 79, 99) , rgb(41, 8, 119));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -323,9 +323,9 @@ form {
 .recents_heading {
     background-color: rgb(57, 92, 196);
     border-color: black;
-    color:rgb(133, 198, 255); /* heading text color*/
+    color:rgb(255, 255, 255); /* heading text color*/
     border-style: solid;
-    padding:0px 8px 0px 8px ;
+    padding:0px 18px 0px 18px ;
     border-radius: 0.9rem;;
     border-width: 0.01rem;
 }
