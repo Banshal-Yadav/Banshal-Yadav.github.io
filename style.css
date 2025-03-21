@@ -315,6 +315,26 @@ form {
     border-color: rgb(108, 108, 108);
 }
 
+/* scroll-bar styles */
+.recents::-webkit-scrollbar {
+    width: 8px;  
+}
+
+.recents::-webkit-scrollbar-track {
+    background: rgb(50, 50, 50); 
+    border-radius: 1rem;
+}
+
+.recents::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+.recents::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 130, 130); 
+}
+
+
 .this_week {
     border-radius: 1rem;
     background-color: rgb(64, 63, 63);
