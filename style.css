@@ -301,7 +301,10 @@ form {
 }
 
 .recents {
-    padding: 0.5rem;
+    height: 14.8rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 1.1rem;
     background-image: repeating-linear-gradient(80deg, rgb(46, 44, 44), rgb(51, 49, 49), rgb(41, 40, 40));
     border-style: solid;
     border-radius: 0.61rem;
@@ -381,12 +384,12 @@ form {
 
 
 footer {
-    height: auto;
+    height:  auto;
     background-image: repeating-linear-gradient(100deg, rgb(25, 25, 25), rgb(57, 84, 112),rgb(26, 63, 47), rgb(39, 39, 39));
 }
 
 .footer_txt {
-    padding: 5rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
    
@@ -464,7 +467,7 @@ footer {
 }
 /* ------------------------------------------- */
 
-/* 400px to 599 */
+/* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
     .card {
         display: grid;
@@ -528,10 +531,13 @@ footer {
         font-family: monospace;
         font-size: 25px;
         font-weight: 300;
-        padding: 1.5rem 10rem 0.5rem 2rem;
+        padding: 0.5rem 0rem 0.5rem 0.9rem;
     }
     
     .recents {
+        padding: 0.5rem;
+        padding-top: 1rem;
+        height: 20rem;
         margin-left: -15px;
         width: 106%;
         
