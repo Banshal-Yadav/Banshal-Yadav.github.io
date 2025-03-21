@@ -472,6 +472,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+    .card_container {
+        padding: 1rem;
+    }
 
     .logo {
     background: linear-gradient(45deg,rgb(165, 83, 187), rgb(47, 90, 142) , rgb(160, 128, 234));
@@ -479,10 +482,10 @@ footer {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-weight: 500;
-        padding-left: 2%;
-        padding-right: 3%;
+        padding-left: 3%;
+        padding-right: 5%;
     }
     
     .banner {
@@ -492,13 +495,11 @@ footer {
     }
    
     .nav {
-        padding-top: 10px;
-        padding-bottom: 15px;
-        padding: 5px;
+        padding: 1rem;
         padding-bottom: 15px;
     }
     .nav_txt{
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .header_options {
@@ -537,12 +538,8 @@ footer {
         padding-top: 1rem;
         height: 20rem;
         margin-left: -15px;
-        width: 106%;
-        
+        width: 105%;
     }
-     .recents_container {
-        width: 90%;
-     }
 }
 
 
