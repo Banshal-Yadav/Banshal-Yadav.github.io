@@ -50,12 +50,12 @@
 }
 
 .nav {
+    background-color: rgb(17, 16, 22);
     padding: 2.2rem;
     height: fit-content;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 350;
-    color: rgb(44, 44, 42);
 }
 
 .nav_txt {
@@ -93,7 +93,7 @@
 
 /* SEARCH */
 .search_wrapper {
-    background-image: repeating-linear-gradient(45deg,  rgb(17, 16, 22));
+    background-color: rgb(17, 16, 22);
     height: fit-content;
     display: flex;
     justify-content: left;
@@ -101,6 +101,7 @@
 
 #search_container {
     padding: 0.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     gap:10px;
@@ -125,6 +126,10 @@ form {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; 
     transition-duration: 0.3s ;
+    color: rgb(162, 160, 153);
+}
+#search_bar::placeholder {
+    color: rgb(126, 125, 125);
 }
 
 #search_bar:hover {
@@ -148,12 +153,17 @@ form {
 .card_sec_heading {
     background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
     font-family: monospace;
-    color: white;
-    font-size: 40px;
-    font-weight: 100;
     padding: 1.5rem 0rem 0.5rem 4rem;
-    /* padding-top: 2rem;
-    padding-left: 3rem; */
+}
+.notes_txt_gradient {
+    background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205), rgb(10, 117, 99));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 300;
+    position: relative;
+    z-index: 2; /* to keep gradient on top if any overlayer */
 }
 
 /* background of the card wrapper */
@@ -349,12 +359,14 @@ form {
 
 /* working on */
 .working_on_container {
+    background-color:  rgb(17, 16, 22);
+   
     border-style: solid;
     border-color: rgb(57, 57, 57);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
     padding: 1rem;
-    background-image: repeating-linear-gradient(85deg, rgb(17, 16, 22));
+    
     
 }
 .working_on_heading {
