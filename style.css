@@ -36,12 +36,12 @@
 }
 
 .logo {
-    background: linear-gradient(45deg,rgb(97, 30, 30), rgb(32, 79, 99) , rgb(41, 8, 119));
+    background: linear-gradient(45deg,rgb(195, 36, 36), rgb(49, 130, 144) , rgb(26, 2, 83));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    font-size: 3rem;
+    font-size: 4rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     padding-left: 3%;
@@ -49,18 +49,13 @@
     color: rgb(188, 214, 224);
 }
 
-
-
 .nav {
-    
-    padding: 0.2rem;
+    padding: 2.2rem;
     height: fit-content;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 350;
     color: rgb(44, 44, 42);
-    /* border-style:solid;
-    border-width: 1px; */
 }
 
 .nav_txt {
@@ -100,7 +95,6 @@
 .search_wrapper {
     background-image: repeating-linear-gradient(45deg,  rgb(17, 16, 22));
     height: fit-content;
-    background-color: rgb(175, 186, 113);
     display: flex;
     justify-content: left;
 }
@@ -526,11 +520,11 @@ footer {
         width: 100%;
     }
     .card_sec_heading {
-        background-color: rgb(213, 214, 171);
+        background-color: rgb(80, 80, 71);
         font-family: monospace;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 300;
-        padding: 0.5rem 0rem 0.5rem 2rem;
+        padding: 1.5rem 0rem 0.1rem 2rem;
     }
     
     .recents {
