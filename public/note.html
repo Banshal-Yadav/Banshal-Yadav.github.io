@@ -30,6 +30,8 @@
             }
 
             .note  {
+                height: fit-content;
+                padding:1rem;
             }
             .list {
                 color: gray;
@@ -65,6 +67,12 @@
                 z-index: 15;
                 position: relative;
             }
+            .option {
+                padding:0.8rem;
+                border-style: solid;
+                border-color: rgb(121, 121, 121);
+                border-radius: 0.4rem;
+            }
         </style>
 <body>
     <header>
@@ -77,19 +85,19 @@
        <h3 class="note_heading">Note 01</h3>
             <ul class="list">
                 <li id="op1">
-                    <h4><u>Worked on personal website</u></h4>
+                    <h4 class="option"><u>Worked on personal website</u></h4>
                     <p class="pop"> <big><u>my personal website </u></big> <br>
                         Developing and refining my personal website to showcase my projects, interests, and experiences. Focusing on improving the user interface and adding new features.
                     </p>
                 </li>
                 <li id="op1">
-                    <h4><u>Studied Theory of computation</u></h4>
+                    <h4 class="option"><u>Studied Theory of computation</u></h4>
                     <p class="pop"> <big><u>Theory of computation</u></big> <br>
                         Studying how machines process information and solve problems. Learning about automata, formal languages, and what computers can and cannot compute. This helps build a foundation for understanding algorithms and their limits.
                     </p>
                 </li>
                 <li id="op1">
-                    <h4><u>Studies basics of salesman problem</u></h4>
+                    <h4 class="option"><u>Studies basics of salesman problem</u></h4>
                     <p class="pop"> <big><u>salesman problem</u></big> <br>
                         Exploring the traveling salesman problem - 
                         finding the shortest route that visits all cities once. 
