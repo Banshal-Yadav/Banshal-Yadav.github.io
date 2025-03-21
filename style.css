@@ -444,7 +444,7 @@ footer {
     .card {
         padding: 20px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
     .card_style {
@@ -454,6 +454,9 @@ footer {
     }
     #search_btn {
         height: 2.9rem;
+     }
+     .recents {
+        width: 105%;
      }
      
 }

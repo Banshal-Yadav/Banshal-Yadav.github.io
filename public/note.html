@@ -8,29 +8,62 @@
 </head>
         <style>
             body {
+                background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22)) ; 
                 margin: 0;
-                padding: 1rem;
+                padding: 2% 10% 0% 10% ;
             }
 
             header h2 {
-                color: rgb(12, 60, 148);
-                display: flex;
+                background: linear-gradient(45deg,rgb(195, 36, 36), rgb(33, 22, 74) , rgb(26, 2, 83));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: monospace;
+                font-size: 60px;
+                margin: 0px;
+                padding: 1rem 0rem 0.2rem 1rem;
+            }
+            .note_container {
+                padding: 1rem;
                 justify-content: center;
+                gap: 1rem;
             }
 
             .note  {
-                background-color: rgb(195, 192, 192);
-                border-radius: 8px;
             }
             .list {
+                color: gray;
                 padding-left:2rem;
                 padding-bottom:1rem;
             }
 
             .note_heading {
-                color: rgb(142, 27, 107);
+                color: rgb(79, 111, 52);
                 padding: 20px 0px 0px 20px;
                 
+            }
+            
+            .pop {
+                margin-top: -2.5rem;
+                opacity: 0;
+                height: 0px;
+                border-style: solid;
+                border-color: gray;
+                border-radius: 0.5rem;
+                background-color: rgb(54, 54, 54);
+                transition-duration: 0.4s;
+            }
+            .pop:hover {
+                overflow-y: scroll;
+                opacity: 1;
+                height: 5rem;
+                padding: 1.5rem;
+                border-style: solid;
+                border-color: rgb(121, 121, 121);
+                border-radius: 0.4rem;
+                background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22));
+                z-index: 15;
+                position: relative;
             }
         </style>
 <body>
@@ -39,12 +72,33 @@
     </header>
 
     <main>
+     <div class="note_container"> 
     <div class="note">
        <h3 class="note_heading">Note 01</h3>
             <ul class="list">
-                <li>Worked on personal website</li>
-                <li>Studied Theory of computation</li>        
-                <li>Studies basics of salesman problem</li>              
+                <li id="op1">
+                    <h4><u>Worked on personal website</u></h4>
+                    <p class="pop"> <big><u>my personal website </u></big> <br>
+                        Developing and refining my personal website to showcase my projects, interests, and experiences. Focusing on improving the user interface and adding new features.
+                    </p>
+                </li>
+                <li id="op1">
+                    <h4><u>Studied Theory of computation</u></h4>
+                    <p class="pop"> <big><u>Theory of computation</u></big> <br>
+                        Studying how machines process information and solve problems. Learning about automata, formal languages, and what computers can and cannot compute. This helps build a foundation for understanding algorithms and their limits.
+                    </p>
+                </li>
+                <li id="op1">
+                    <h4><u>Studies basics of salesman problem</u></h4>
+                    <p class="pop"> <big><u>salesman problem</u></big> <br>
+                        Exploring the traveling salesman problem - 
+                        finding the shortest route that visits all cities once. 
+                        Looking at different ways to solve it like nearest neighbor 
+                        and dynamic programming approaches. 
+                        It's a classic problem that shows up in 
+                        many real-world applications.
+                    </p>
+                </li>              
             </ul>
     </div>
 
@@ -65,6 +119,9 @@
                 <li>explored new restaurant in Bengaluru</li>              
              </ul>
      </div>
+
+     
+    </div>    
     </main>
 
     <footer>
