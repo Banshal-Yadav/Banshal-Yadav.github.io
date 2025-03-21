@@ -31,7 +31,7 @@
     /* background-image: linear-gradient(45deg, rgb(198, 235, 97), rgb(76, 117, 150)); */
     display:flex;
     justify-content: center;
-    background-color:  rgb(122, 146, 69) ;/* rgb(155, 160, 122) */
+    background-color:  rgb(17, 16, 22) ;/* rgb(155, 160, 122) */
     
 }
 
@@ -165,14 +165,14 @@ form {
 /* background of the card wrapper */
 .card_container { 
     display:flex;
-    padding: 3%;
-    padding-top: 10px;
+    padding: 1.5rem;
+    padding-top: 25px;
     background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
     height: auto;
 }
 
 .card_wrapper {
-    padding:20px;
+    padding:10px;
     display: grid;
     height: fit-content;
     border-radius: 0.61rem;
@@ -192,10 +192,9 @@ form {
     border-style: solid;
     border-width: 0.01rem;
     border-color: rgb(70, 69, 69);;
-    padding:10px;
+    padding:20px;
     border-radius: 1rem;
     transform: translateZ(-1px);
-    overflow-x: auto;
 }
 .card_style {
     outline-style:solid;
@@ -206,7 +205,7 @@ form {
     margin-right:2%;
     padding: 10px;
     height: fit-content;
-    min-width: 100px;
+    min-width: 150px;
     box-sizing: border-box;
 
     font-size: large;
@@ -357,7 +356,7 @@ form {
 /* working on */
 .working_on_container {
     border-style: solid;
-    border-color: rgb(146, 146, 146);
+    border-color: rgb(57, 57, 57);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
     padding: 1rem;
@@ -381,7 +380,6 @@ form {
 .working_on_info {
    padding: 0.5rem 0rem 1rem 4.2rem;
 }
-
 
 footer {
     height:  auto;
@@ -531,7 +529,7 @@ footer {
         font-family: monospace;
         font-size: 25px;
         font-weight: 300;
-        padding: 0.5rem 0rem 0.5rem 0.9rem;
+        padding: 0.5rem 0rem 0.5rem 2rem;
     }
     
     .recents {
