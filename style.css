@@ -180,8 +180,9 @@ form {
     display: grid;
     height: fit-content;
     border-radius: 0.61rem;
-     background-image: repeating-linear-gradient(45deg, rgb(27, 27, 27), rgb(51, 49, 49), rgb(41, 40, 40));
-    /* backdrop-filter: blur(6px); */ /* blur effect */   
+     /* background-image: repeating-linear-gradient(45deg, rgb(27, 27, 27), rgb(51, 49, 49), rgb(41, 40, 40)); */
+    /* backdrop-filter: blur(6px); */ /* blur effect */
+    background-color: rgb(17, 16, 22);   
     outline-style:solid;
     outline-width: 0.1rem;
     outline-color: rgb(91, 93, 85);
@@ -190,79 +191,81 @@ form {
 .card {
     height:fit-content ;
     display: flex;
-    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+    /* background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28)); */
+    background-color: rgb(17, 16, 22); 
     justify-content: center;
     gap: 15px;
     border-style: solid;
     border-width: 0.01rem;
-    border-color: rgb(70, 69, 69);;
+    border-color: transparent;
     padding:20px;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     transform: translateZ(-1px);
 }
 .card_style {
     outline-style:solid;
-    outline-width: 0.5px;
+    outline-width: 0.3px;
     outline-color: rgb(50, 50, 50) ;
     opacity: 1;
-    margin-left:2%;
-    margin-right:2%;
-    padding: 10px;
+    padding: 0.5rem;
     height: fit-content;
     min-width: 150px;
     box-sizing: border-box;
 
     font-size: large;
-    background-color: rgb(34, 35, 34);  /* rgb(240, 128, 12); */
+    background-color: rgb(29, 28, 34);  /* rgb(240, 128, 12); */
     
 
     /* border radius */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
     transition-duration: 0.3s;
-    
 }
 
 .card_style:hover {
-    background-image: linear-gradient(145deg, rgb(65, 65, 65) , rgb(44, 43, 43) 90px);   /* linear-gradient(145deg, red, maroon); */
+    background-image: linear-gradient(145deg, rgb(17, 16, 18) , rgb(14, 8, 27) 90px);   /* linear-gradient(145deg, red, maroon); */
     /* box-shadow: 2px 3px 10px; */
-    outline-color: rgb(129, 129, 120) ;
-    transform: scale(1.1);
+    outline-color: rgb(113, 113, 113) ;
+    outline-width: 0.2px;
+    transform: scale(1.04);
     
 }
-
+.card_header {
+    height: fit-content;
+    padding: 0rem 0rem 0.2rem 0.3rem;
+}
 .card_heading {
-    /* text-decoration-line:underline;
-    text-decoration-style:initial; */
-    font-size: 15px;
-    font-weight: 490;
+    color:rgb(228, 175, 110);
+    font-size: 20px;
+    font-weight: 500;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 5px;
-    background-color: rgb(145, 155, 135);;  /*  crayon yellow rgb(240, 128, 12); or  highlighter green rgb(127, 255, 0);*/ 
 
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
 }
 
 .card_body{
-    background-color:  rgb(33, 33, 33);
+    background-color:  rgb(50, 49, 49);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-    height: fit-content;
-    margin-right: 5px;
-    margin-left: -5px;
-    margin-top: 15px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    height: 4rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }
 .card_body_txt {
-    color:lightgray;
+    font-size: 0.8rem;
+    color:rgb(187, 203, 155);
+}
+.card_footer_nav {
+    padding: 0.2rem;
+}
+
+.card_nav_footer {
+    color: gray;
+    text-decoration: none;;
+    font-size: 0.7rem;
 }
 
 .new_note {
@@ -304,11 +307,12 @@ form {
 }
 
 .recents {
-    height: 14.8rem;
+    height: 16.2rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    padding: 1.1rem;
-    background-image: repeating-linear-gradient(80deg, rgb(46, 44, 44), rgb(51, 49, 49), rgb(41, 40, 40));
+    padding: 0.8rem;
+    /* background-image: repeating-linear-gradient(80deg, rgb(46, 44, 44), rgb(51, 49, 49), rgb(41, 40, 40)); */
+    background-color: rgb(17, 16, 22); 
     border-style: solid;
     border-radius: 0.61rem;
     border-width: 0.1rem;
@@ -336,29 +340,29 @@ form {
 
 
 .this_week {
-    border-radius: 1rem;
-    background-color: rgb(64, 63, 63);
+    border-radius: 0.5rem;
+    background-color: rgb(33, 33, 33);
     padding: 2rem;
     transition-duration: 0.3s;
 }
 .this_week:hover {
     transform: scale(1.01);
     border-style: solid;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-width: 0.1rem;
     border-color: rgb(112, 111, 111);
 }
 
 .previous_week {
-    border-radius: 1rem;
-    background-color: rgb(64, 63, 63);
+    border-radius: 0.5rem;
+    background-color: rgb(33, 33, 33);
     padding: 2rem;
     transition-duration: 0.3s;;
 }
 .previous_week:hover {
     transform: scale(1.01);
     border-style: solid;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-width: 0.1rem;
     border-color: rgb(130, 128, 128);
 }
@@ -430,6 +434,8 @@ footer {
     font-weight: 590;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* icons */
 
 
 
