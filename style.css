@@ -409,6 +409,36 @@ form {
     color:rgb(188, 188, 188);
 }
 
+/* skills */
+
+.section_skils{
+    background-color:  rgb(17, 16, 22);
+    border-style: solid;
+    border-color: rgb(79, 78, 78);
+    border-width: 0.0605rem 0rem 0rem 0rem;
+}
+
+.skills_header {
+    background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205) , rgb(10, 117, 99));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    color: lightgray;
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: 200;
+    padding: 3rem;
+}
+
+.skills_body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: gray;
+    padding: 3rem;
+}
+
 /* working on */
 .working_on_container {
     background-color:  rgb(17, 16, 22);
@@ -618,6 +648,18 @@ footer {
         padding-top: 1.5rem;
         height: 20rem;
         width: 105%;
+    }
+    .skills_body {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .skills_body {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: gray;
+        padding: 4rem;
+        padding-top: 0.2rem;
     }
 }
 
