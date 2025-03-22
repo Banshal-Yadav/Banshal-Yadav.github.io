@@ -444,7 +444,7 @@ footer {
     .card {
         padding: 20px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
     .card_style {
@@ -506,6 +506,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    .card {
+        height: 90%;  /* to fit card within card_wrapper height bounds */
+        overflow-y: scroll; /* add scroll-bar*/
+    }
+    .card_wrapper {
+        height: 30rem; /* fix height for mobile devices */
     }
     .card_container {
         padding: 1rem;
