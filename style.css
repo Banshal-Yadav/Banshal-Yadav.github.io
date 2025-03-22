@@ -318,6 +318,18 @@ form {
     border-width: 0.1rem;
     border-color: rgb(108, 108, 108);
 }
+.recent_card_container {
+    background: linear-gradient(45deg,rgb(34, 34, 34), rgb(73, 74, 75) , rgb(32, 32, 32));
+    border-style: solid;
+    border-radius: 0.61rem;
+    border-width: 0.1rem;
+    border-color: rgb(55, 54, 54);
+}
+
+
+.recent_header {
+    padding: 10px;
+}
 
 /* scroll-bar styles */
 .recents::-webkit-scrollbar {
@@ -343,6 +355,7 @@ form {
     border-radius: 0.5rem;
     background-color: rgb(33, 33, 33);
     padding: 2rem;
+    padding-top: 0.3rem;
     transition-duration: 0.3s;
 }
 .this_week:hover {
@@ -353,19 +366,6 @@ form {
     border-color: rgb(112, 111, 111);
 }
 
-.previous_week {
-    border-radius: 0.5rem;
-    background-color: rgb(33, 33, 33);
-    padding: 2rem;
-    transition-duration: 0.3s;;
-}
-.previous_week:hover {
-    transform: scale(1.01);
-    border-style: solid;
-    border-radius: 0.5rem;
-    border-width: 0.1rem;
-    border-color: rgb(130, 128, 128);
-}
 
 .recents_heading {
     background-color: rgb(78, 79, 81);
