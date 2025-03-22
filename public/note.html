@@ -38,6 +38,7 @@
                 padding-left:2rem;
                 padding-bottom:1rem;
             }
+            
 
             .note_heading {
                 color: rgb(79, 111, 52);
@@ -47,22 +48,21 @@
             
             .pop {
                 margin-top: -2.5rem;
-                opacity: 0;
-                height: 0px;
-                border-style: solid;
-                border-color: gray;
-                border-radius: 0.5rem;
-                background-color: rgb(54, 54, 54);
-                transition-duration: 0.4s;
-            }
+               opacity: 0; 
+               height: 0;
+               overflow: hidden;
+               border-style: solid;
+               border-color: gray;
+               border-radius: 0.5rem;
+               background-color: rgb(54, 54, 54);
+               transition: all 0.4s ease-in-out;    
+                }
+
             .pop:hover {
                 overflow-y: scroll;
                 opacity: 1;
                 height: 5rem;
                 padding: 1.5rem;
-                border-style: solid;
-                border-color: rgb(121, 121, 121);
-                border-radius: 0.4rem;
                 background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22));
                 z-index: 15;
                 position: relative;
