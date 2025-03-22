@@ -436,7 +436,11 @@ form {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     color: gray;
-    padding: 3rem;
+    padding: 4rem;
+    padding-top: 0.2rem;
+}
+.skill-list-body {
+    padding: 0.5rem;
 }
 
 /* working on */
@@ -459,10 +463,10 @@ form {
     
     color: lightgray;
     font-family: monospace;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 200;
     padding-left: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
 }
 
 .working_on_info {
@@ -493,8 +497,11 @@ footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* icons */
-
+/* fold longer-text in section  */
+section {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
 
 
 /* 600px to 1300px */
