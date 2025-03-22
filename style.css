@@ -299,6 +299,7 @@ form {
     display: none;
 }
 
+
 /* recents */
 
 .recents_container {
@@ -356,14 +357,15 @@ form {
 
 .this_week {
     width: 16rem;
-    border-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     background-color: rgb(33, 33, 33);
     padding: 2rem;
-    padding-top: 0.3rem;
+    padding-top: 2rem;
     transition-duration: 0.3s;
 }
 .this_week:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 0.1rem;
@@ -383,6 +385,28 @@ form {
 }
 .recent_txt {
     color: lightgray
+}
+.recent_footer {
+    background-color: rgb(33, 33, 33);
+    border-color: rgb(56, 56, 56);
+    color:rgb(188, 188, 188); 
+    font-size: 20px;;
+    border-style: solid;
+    padding:0px 18px 0px 18px ;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-width: 0.009rem;
+
+    padding: 0.3rem;
+}
+.recent_tag {
+    font-size: 0.6rem;
+    padding: 2px;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.01rem;
+    border-color: rgb(63, 63, 63);
+    color:rgb(188, 188, 188);
 }
 
 /* working on */
@@ -511,11 +535,13 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        padding: 15px;
     }
 
     .card {
         height: 90%;  /* to fit card within card_wrapper height bounds */
         overflow-y: scroll; /* add scroll-bar*/
+        overflow-x: hidden; /* hide horizontal scrollbar */
     }
     .card_wrapper {
         height: 30rem; /* fix height for mobile devices */
@@ -524,6 +550,10 @@ footer {
         display: flex;
         justify-content: center;
         gap: 1rem;
+    }
+    .card_style {
+        min-width: 0;
+        width: 100%;
     }
 
     .logo {
