@@ -58,6 +58,7 @@
     font-weight: 350;
 }
 
+
 .nav_txt {
     background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
     -webkit-background-clip: text;
@@ -456,6 +457,9 @@ form {
     font-size: 35px;
     font-weight: 200;
     padding: 3rem;
+}
+.skill_li_head{
+    color:rgb(153, 154, 98);
 }
 
 .skills_container {
