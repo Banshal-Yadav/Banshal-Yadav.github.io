@@ -608,7 +608,7 @@ section {
         overflow-x: hidden; /* hide horizontal scrollbar */
     }
     .card_wrapper {
-        height: 30rem; /* fix height for mobile devices */
+        height: 25rem; /* fix height for mobile devices */
     }
     .card_container {
         display: flex;
@@ -682,7 +682,7 @@ section {
     }
 
     .recents {
-        padding: 0.5rem;
+        padding: 0.4rem;
         padding-top: 1.5rem;
         height: 20rem;
         width: 105%;
