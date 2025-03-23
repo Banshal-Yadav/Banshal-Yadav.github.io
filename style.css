@@ -470,6 +470,13 @@ form {
     padding: 0.5rem;
 }
 
+.link {
+  color:gray;
+}
+.link:hover {
+    color:rgb(164, 164, 164);
+}
+
 /* working on */
 .working_on_container {
     background-color:  rgb(17, 16, 22);

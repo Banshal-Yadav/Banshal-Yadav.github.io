@@ -81,6 +81,28 @@
                 padding: 0.5rem; /* gap between list items called opt*/
             }
 
+            .home_btn {
+                    background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 1%;
+                    font-size: 18px;;
+                    color: white;
+                    text-decoration: none;
+                    transition-duration: 0.5s;
+                }
+                .home_btn:hover {
+                    background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 1%;
+                    font-size: 18px;;
+                    color: white;
+                    text-decoration: none;
+                }
+
             /* 400px to 599 mobile view*/
             @media (min-width: 400px) and (max-width: 599px){
                 .pop {
@@ -106,10 +128,34 @@
                 border-width: 0.1rem;
                 border-radius: 0.4rem;
               }
+              .home_btn {
+                    background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 1%;
+                    font-size: 18px;;
+                    color: white;
+                    text-decoration: none;
+                    transition-duration: 0.3s;
+                }
+                .home_btn:hover {
+                    background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 1%;
+                    font-size: 18px;;
+                    color: white;
+                    text-decoration: none;
+                }
             }
         </style>
 <body>
     <header>
+        <div>
+            <a class="home_btn" href="/index.html" >Home</a>
+        </div>
         <h2><b>Notes</b></h2>
     </header>
 
