@@ -47,31 +47,65 @@
             }
             
             .pop {
-                margin-top: -2.5rem;
-               opacity: 0; 
-               height: 0;
+               margin-top: -4.2rem; /* to match the list item top margin*/
+               opacity: 0;    /* before hover condition*/
+               height: 3rem;
                overflow: hidden;
                border-style: solid;
                border-color: gray;
-               border-radius: 0.5rem;
+               border-radius: 0.4rem;
                background-color: rgb(54, 54, 54);
-               transition: all 0.4s ease-in-out;    
+               transition: all 0.2s ease-in-out;    
                 }
 
             .pop:hover {
                 overflow-y: scroll;
                 opacity: 1;
                 height: 5rem;
-                padding: 1.5rem;
+                padding: 1.2rem;
                 background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22));
                 z-index: 15;
                 position: relative;
+                border-width: 0.1rem;
+                border-radius: 0.4rem;
             }
             .option {
                 padding:0.8rem;
                 border-style: solid;
                 border-color: rgb(121, 121, 121);
+                border-width: 0.1rem;
                 border-radius: 0.4rem;
+            }
+
+            .opt {
+                padding: 0.5rem; /* gap between list items called opt*/
+            }
+
+            /* 400px to 599 mobile view*/
+            @media (min-width: 400px) and (max-width: 599px){
+                .pop {
+               margin-top: -5.3rem; /* to match the list item top margin*/
+               opacity: 0;    /* before hover condition*/
+               height: 3rem;
+               overflow: hidden;
+               border-style: solid;
+               border-color: gray;
+               border-radius: 0.4rem;
+               background-color: rgb(54, 54, 54);
+               transition: all 0.3s ease-in-out;    
+                }
+
+            .pop:hover {
+                overflow-y: scroll;
+                opacity: 1;
+                height: 5rem;
+                padding: 1.2rem;
+                background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22));
+                z-index: 15;
+                position: relative;
+                border-width: 0.1rem;
+                border-radius: 0.4rem;
+              }
             }
         </style>
 <body>
@@ -84,21 +118,21 @@
     <div class="note">
        <h3 class="note_heading">Note 01</h3>
             <ul class="list">
-                <li id="op1">
-                    <h4 class="option"><u>Worked on personal website</u></h4>
-                    <p class="pop"> <big><u>my personal website </u></big> <br>
+                <li class="opt">
+                    <h4 class="option"><u>Working on personal website</u></h4>
+                    <p class="pop"> <big><u>My personal website </u></big> <br>
                         Developing and refining my personal website to showcase my projects, interests, and experiences. Focusing on improving the user interface and adding new features.
                     </p>
                 </li>
-                <li id="op1">
+                <li class="opt">
                     <h4 class="option"><u>Studied Theory of computation</u></h4>
                     <p class="pop"> <big><u>Theory of computation</u></big> <br>
                         Studying how machines process information and solve problems. Learning about automata, formal languages, and what computers can and cannot compute. This helps build a foundation for understanding algorithms and their limits.
                     </p>
                 </li>
-                <li id="op1">
+                <li class="opt">
                     <h4 class="option"><u>Studies basics of salesman problem</u></h4>
-                    <p class="pop"> <big><u>salesman problem</u></big> <br>
+                    <p class="pop"> <big><u>Salesman problem</u></big> <br>
                         Exploring the traveling salesman problem - 
                         finding the shortest route that visits all cities once. 
                         Looking at different ways to solve it like nearest neighbor 
