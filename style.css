@@ -516,7 +516,9 @@ form {
 .working_on_info {
    padding: 3rem;;
 }
-
+.work_list {
+   padding: 0.5rem;
+}
 
 /* footer */
 footer {
@@ -560,7 +562,7 @@ section {
         padding-top: 0.1rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
     .card_style {
         max-width: 200px;
@@ -570,8 +572,6 @@ section {
     #search_btn {
         height: 2.9rem;
      }
-     
-     
 }
 
 /* --------------------------------------- */
