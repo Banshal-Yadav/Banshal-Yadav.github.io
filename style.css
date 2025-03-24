@@ -328,23 +328,30 @@ form {
 /* recents */
 
 .recents_container {
-    background-color: transparent;
+    background-color: rgb(17, 16, 22);
+    padding: 0.5rem;
+    overflow-x: scroll;
     width: fit-content;
+    border-style: solid;
+    border-radius: 0.61rem;
+    border-width: 0.1rem;
+    border-color: rgb(108, 108, 108);
 }
 
 .recents {
-    display:grid;
+    display:flex;
     justify-content:center;
     height: 16.2rem;
-    overflow-y: scroll;
+    width: fit-content;
     scroll-behavior: smooth;
+    gap: 0.4rem;
     padding: 0.3rem;
     padding-top: 1.2rem;
     /* background-image: repeating-linear-gradient(80deg, rgb(46, 44, 44), rgb(51, 49, 49), rgb(41, 40, 40)); */
     background-color: rgb(17, 16, 22); 
     border-style: solid;
     border-radius: 0.61rem;
-    border-width: 0.1rem;
+    border-width: 0rem;
     border-color: rgb(108, 108, 108);
 }
 .recent_card_container {
@@ -379,6 +386,7 @@ form {
 .recents::-webkit-scrollbar-thumb:hover {
     background: rgb(130, 130, 130); 
 }
+
 
 
 .this_week {
@@ -540,7 +548,7 @@ section {
 }
 
 
-/* 600px to 1300px */
+/* 600px to 1920px */
 @media (min-width: 600px) and (max-width: 1920px) {
     .card {
         padding: 20px;
@@ -557,10 +565,7 @@ section {
     #search_btn {
         height: 2.9rem;
      }
-     .recents {
-        height: 27.5rem;
-        width: 105%;
-     }
+     
      
 }
 
@@ -628,6 +633,7 @@ section {
         justify-content: center;
         gap: 1rem;
     }
+
     .card_style {
         min-width: 0;
         width: 100%;
@@ -695,11 +701,41 @@ section {
     }
 
     .recents {
-        padding: 0.4rem;
-        padding-top: 1.5rem;
-        height: 20rem;
-        width: 105%;
+        display:flex;
+        justify-content:center;
+        height: fit-content;
+        width: fit-content;
+        scroll-behavior: smooth;
+        gap: 0.7rem;
+        padding: 1rem;
+        padding-top: 1.2rem;
+        /* background-image: repeating-linear-gradient(80deg, rgb(46, 44, 44), rgb(51, 49, 49), rgb(41, 40, 40)); */
+        background-color: rgb(17, 16, 22); 
+        border-style: solid;
+        border-radius: 0.61rem;
+        border-width: 0rem; /* 0 value to make border not visible  */
+        border-color: rgb(108, 108, 108);
     }
+    
+    .this_week {
+        width: 10rem;
+        height: fit-content;
+    }
+
+    .recents_container {
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow-x: scroll;
+        background-color: transparent;
+        width: fit-content;
+        border-style: solid;
+        border-radius: 0.61rem;
+        border-width: 0.1rem;
+        background-color: rgb(17, 16, 22); /* changed color to darker to match the recent card background*/
+        border-color: rgb(108, 108, 108);
+    }
+
     .skills_container {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
