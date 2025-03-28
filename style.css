@@ -496,7 +496,7 @@ form {
     border-color: rgb(57, 57, 57);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
-    padding: 2% 15% 0 15%;
+    padding: 2% 15% 2% 15%;
 }
 .working_on_heading {
     background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205) , rgb(10, 117, 99));
@@ -768,7 +768,7 @@ section {
         padding-left: 0;
     }
     .working_on_container {
-        padding: 1% 1% 1% 12%;
+        padding: 1% 1% 10% 12%;
     }
     .working_on_heading {
         font-size: 2.5rem;
