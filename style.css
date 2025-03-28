@@ -513,9 +513,10 @@ form {
 
 .working_on_info {
     padding: 2% 15% 5% 7%;
+    
 }
 .work_list {
-   padding: 0.5rem;
+   color: gray;
 }
 
 /* footer */
@@ -631,7 +632,7 @@ section {
         height: 25rem; /* fix height for mobile devices */
     }
     .card_container {
-        padding-top: 0.6rem;
+        padding: 5% 5% 5% 5%;
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -692,11 +693,18 @@ section {
         width: 100%;
     }
     .card_sec_heading {
+        display: flex;
+        justify-content: center;
         background-color: rgb(80, 80, 71);
         font-family: monospace;
         font-size: 30px;
         font-weight: 300;
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 0.5rem 3rem 0rem 3rem;
+    }
+    .notes_txt_gradient {
+        font-size: 2rem;
+        font-weight: 600;
+
     }
     .all_notes {
         font-size: 18px;
@@ -738,23 +746,36 @@ section {
         background-color: rgb(17, 16, 22); /* changed color to darker to match the recent card background*/
         border-color: rgb(108, 108, 108);
     }
-
     .skills_container {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .skills_container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
         color: gray;
-        padding: 4rem;
-        padding-top: 0.2rem;
+        padding: 1% 1% 1% 0%;
+    }
+    .skills_header{
+        background: linear-gradient(45deg,rgb(176, 154, 183), rgb(73, 154, 147) , rgb(55, 10, 75));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding-left: 3%;
     }
     .footer_txt  {
         padding: 1.4rem;
         padding-top: 1.5rem;
         padding-left: 0;
+    }
+    .working_on_container {
+        padding: 1% 1% 1% 12%;
+    }
+    .working_on_heading {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .working_on_info {
+        padding: 10% 5% 1% 15%; 
     }
 }
 
