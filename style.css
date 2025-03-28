@@ -11,7 +11,7 @@
     font-size: 12px;;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(155, 190, 122, 0.3); /*  */
+    background-color: rgba(0, 0, 0, 0.622); /*  */
     backdrop-filter: blur(5px);
 }
 
@@ -30,12 +30,12 @@
     /* background-image: linear-gradient(45deg, rgb(198, 235, 97), rgb(76, 117, 150)); */
     display:flex;
     justify-content: center;
-    background-color:  rgb(17, 16, 22) ;/* rgb(155, 160, 122) */
+    background-color:  rgb(17, 16, 22); /* rgb(155, 160, 122) */
     
 }
 
 .logo {
-    background: linear-gradient(45deg,rgb(195, 36, 36), rgb(49, 130, 144) , rgb(26, 2, 83));
+    background: linear-gradient(45deg,rgb(195, 36, 36),wheat, rgb(49, 130, 144) , rgb(26, 2, 83));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,9 +43,13 @@
     font-size: 4rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
-    padding-left: 3%;
-    padding-right: 20%;
     color: rgb(188, 214, 224);
+    display:flex;
+    justify-content: center;
+    background-color:  rgb(17, 16, 22);
+}
+.banshal_logo_txt{
+    background-color: rgb(17, 16, 22);
 }
 
 .nav {
@@ -55,6 +59,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 350;
+    display:flex;
+    justify-content: center;
+}
+.nav_txt_container{
+    width: 30rem;
+    display:flex;
+    justify-content: center;
 }
 
 .nav_txt {
@@ -78,14 +89,18 @@
     color: white;
     text-decoration: none;
 }
-.nav_txt_gap {
-    color: white;
-    text-decoration: none;
-}
 
 .header_options:hover {
     /* box-shadow: rgb(39, 38, 38)  0px 10px 40px; */
     transform: translateY(-3px);
+}
+#about_me{
+    padding: 5rem;
+    height: fit-content;
+    min-width: 150px;
+    box-sizing: border-box;
+    font-size: large;
+    color: gray;
 }
 
 /* SEARCH */
@@ -93,12 +108,13 @@
     background-color: rgb(17, 16, 22);
     height: fit-content;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 #search_container {
     padding: 1.5rem;
     padding-bottom: 1.5rem;
+    padding-right: 65px;
     display: flex;
     justify-content: center;
     gap:10px;
@@ -712,7 +728,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
         color: gray;
-        padding: 1% 1% 1% 0%;
+        padding: 1% 1% 10% 1%;
     }
     .skills_header{
         background: linear-gradient(45deg,rgb(176, 154, 183), rgb(73, 154, 147) , rgb(55, 10, 75));
