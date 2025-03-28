@@ -96,9 +96,9 @@
 }
 /* About me */
 .about_me_container{
-    padding: 5% 10% 5% 15%;
+    padding: 1% 10% 5% 33%;
     display:flex;
-    justify-content: center;
+    justify-content:left;
     background-color: rgb(17, 16, 22);
 }
 #about_me{
@@ -640,6 +640,9 @@ section {
 
 /* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
+    .about_me_container{
+        padding: 1% 10% 5% 10%;
+    }
     .card_wrapper {
         padding: 0.5rem;
         height: 20rem; /* fix height for mobile devices */
@@ -676,10 +679,12 @@ section {
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: 500;
-        padding-left: 3%;
-        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 6%;
     }
     
     .banner {
@@ -689,8 +694,8 @@ section {
     }
    
     .nav {
-        padding: 1rem;
-        padding-bottom: 15px;
+        padding: 2.5rem;
+        padding-bottom: 5px;
     }
     .nav_txt{
         font-size: 16px;
@@ -720,6 +725,9 @@ section {
      }
     #search_bar:hover {
         width: 100%;
+    }
+    .search_suggetion_container{
+        padding-bottom: 2.5rem;
     }
     .card_sec_heading {
         display: flex;
