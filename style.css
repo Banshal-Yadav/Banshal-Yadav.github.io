@@ -94,13 +94,26 @@
     /* box-shadow: rgb(39, 38, 38)  0px 10px 40px; */
     transform: translateY(-3px);
 }
+/* About me */
+.about_me_container{
+    padding: 5% 10% 5% 15%;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(17, 16, 22);
+}
 #about_me{
-    padding: 5rem;
-    height: fit-content;
-    min-width: 150px;
-    box-sizing: border-box;
     font-size: large;
     color: gray;
+}
+.about_me_para{
+    padding: 0.4rem;
+}
+.game{
+    color: gray;
+    transition-duration: 0.3s;
+}
+.game:hover{
+    color:rgba(112, 118, 94, 0.983);
 }
 
 /* SEARCH */
@@ -168,7 +181,7 @@ form {
     
 }
 .notes_txt_gradient {
-    background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205), rgb(10, 117, 99));
+    background: linear-gradient(45deg,rgb(203, 192, 192), rgb(50, 158, 205), rgb(10, 117, 99));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -471,7 +484,7 @@ form {
 }
 
 .skills_header {
-    background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205) , rgb(10, 117, 99));
+    background: linear-gradient(45deg,rgb(233, 231, 231), rgb(50, 158, 205) , rgb(10, 117, 99));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -515,7 +528,7 @@ form {
     padding: 2% 15% 2% 15%;
 }
 .working_on_heading {
-    background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205) , rgb(10, 117, 99));
+    background: linear-gradient(45deg,rgb(187, 180, 180), rgb(50, 158, 205) , rgb(10, 117, 99));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -622,7 +635,7 @@ section {
     }
 
     .logo {
-        background: linear-gradient(45deg,rgb(165, 83, 187), rgb(47, 90, 142) , rgb(160, 128, 234));
+        background: linear-gradient(45deg,rgb(200, 163, 163), rgb(212, 168, 74) , rgb(21, 1, 67));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -650,12 +663,14 @@ section {
     .header_options {
         font-size: 18px;
     }
+    #search_container{
+        padding-right: 35px;
+    }
     #search_btn {
         padding: 15px;
     }
     #search_btn{
-        background-color: transparent; /* rgb(50, 49, 46) */
-        margin-left: -4.3rem;
+        background-color: transparent;
         border-style: solid;
         border-color: transparent;
         margin-top: -0.35rem;
