@@ -55,7 +55,7 @@
                border-color: gray;
                border-radius: 0.4rem;
                background-color: rgb(54, 54, 54);
-               transition: all 0.2s ease-in-out;    
+               transition: all 0.4s ease-in-out;    
                 }
 
             .pop:hover {
@@ -103,8 +103,31 @@
                     text-decoration: none;
                 }
 
+                .details{
+                    width: 60%;
+                    padding: 0rem;
+                    color: gray;
+                    border-style: solid;
+                    border-color: rgb(131, 131, 131);
+                    border-width: 0.1rem; 
+                }
+                .details_para{
+                    padding: 0.5rem;
+                }
+                .summary {
+                    background-color: rgba(39, 39, 39, 0.442);
+                    padding: 0.5rem;
+                    color: gray;
+                    border-style: solid;
+                    border-color: rgb(106, 106, 106);
+                    border-width: 0.1rem; 
+                }
+
             /* 400px to 599 mobile view*/
             @media (min-width: 400px) and (max-width: 599px){
+                .details{
+                    width: 100%;
+                }
                 .pop {
                margin-top: -5.3rem; /* to match the list item top margin*/
                opacity: 0;    /* before hover condition*/
@@ -149,7 +172,7 @@
                     color: white;
                     text-decoration: none;
                 }
-            }
+        }
         </style>
 <body>
     <header>
@@ -165,50 +188,30 @@
        <h3 class="note_heading">Note 01</h3>
             <ul class="list">
                 <li class="opt">
-                    <h4 class="option"><u>Working on personal website</u></h4>
-                    <p class="pop"> <big><u>My personal website </u></big> <br>
-                        Developing and refining my personal website to showcase my projects, interests, and experiences. Focusing on improving the user interface and adding new features.
-                    </p>
+                    <details class="details">
+                        <summary class="summary">Working on personal website</summary>
+                       <p class="details_para"> Developing and refining my personal website to showcase my projects, interests, and experiences.Focusing on improving the user interface and adding new features.</p>
+                       </details>
                 </li>
                 <li class="opt">
-                    <h4 class="option"><u>Studied Theory of computation</u></h4>
-                    <p class="pop"> <big><u>Theory of computation</u></big> <br>
-                        Studying how machines process information and solve problems. Learning about automata, formal languages, and what computers can and cannot compute. This helps build a foundation for understanding algorithms and their limits.
-                    </p>
+                    <details class="details">
+                        <summary class="summary">Studied Theory of computation</summary>
+                       <p class="details_para"> Studying how machines process information and solve problems. Learning about automata, formal languages, and what computers can and cannot compute. This helps build a foundation for understanding algorithms and their limits.</p>
+                       </details>
                 </li>
                 <li class="opt">
-                    <h4 class="option"><u>Studies basics of salesman problem</u></h4>
-                    <p class="pop"> <big><u>Salesman problem</u></big> <br>
-                        Exploring the traveling salesman problem - 
+                    <details class="details">
+                        <summary class="summary">Studies basics of salesman problem</summary>
+                       <p class="details_para">Exploring the traveling salesman problem - 
                         finding the shortest route that visits all cities once. 
                         Looking at different ways to solve it like nearest neighbor 
                         and dynamic programming approaches. 
                         It's a classic problem that shows up in 
-                        many real-world applications.
-                    </p>
+                        many real-world applications.</p>
+                       </details>
                 </li>              
             </ul>
     </div>
-
-    <div class="note">
-        <h3 class="note_heading">Note 02</h3>
-             <ul class="list">
-                 <li>Worked out</li>
-                 <li>Watched vertasium video on maths</li>        
-                <li>best ml playlist on youtube</li>              
-             </ul>
-     </div>
-
-     <div class="note">
-        <h3 class="note_heading">Note 03</h3>
-             <ul class="list">
-                 <li>watched "flow" movie</li>
-                 <li>created new playlist</li>        
-                <li>explored new restaurant in Bengaluru</li>              
-             </ul>
-     </div>
-
-     
     </div>    
     </main>
 
