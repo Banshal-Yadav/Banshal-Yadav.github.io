@@ -555,7 +555,8 @@ section {
 
 
 /* 600px to 1920px */
-@media (min-width: 600px) and (max-width: 1920px) {
+@media (min-width: 800px) and (max-width: 1920px) {
+    
     .card {
         padding: 20px;
         padding-top: 0.1rem;
@@ -572,11 +573,29 @@ section {
         height: 2.9rem;
      }
 }
+@media (min-width: 600px) and (max-width: 1920px) {
+    
+    .card {
+        padding: 20px;
+        padding-top: 0.1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .card_style {
+        max-width: 200px;
+        width: 100%;
+        margin: 0;
+    }
+    #search_btn {
+        height: 2.9rem;
+     }
+}
 
 /* --------------------------------------- */
 
 /* 570px to 620px searchbar and logo */
-@media (min-width:570px) and (max-width: 620px){
+/* @media (min-width:570px) and (max-width: 620px){
     .search_wrapper{
         padding-left: 20px;
     }
@@ -584,22 +603,23 @@ section {
         width: 90%;
      }
 
-}
+} */
 
 /* 500px to 569px */
-@media (min-width:500px) and (max-width: 569px){
+
+/* @media (min-width:500px) and (max-width: 569px){
     .search_wrapper{
         padding-left: 25px;
     }
-    /* search button bottom border fix */
+    
     #search_btn {
         height: 2.7rem ;
     }
    
-}
+} */
 
 /* 200px to 499px */
-@media (min-width:200px) and (max-width: 499px){
+/* @media (min-width:200px) and (max-width: 499px){
     .banner {
         padding-top: 20px;
         height: 38px;
@@ -609,7 +629,7 @@ section {
         justify-content: center;
     }
     
-}
+} */
 /* ------------------------------------------- */
 
 /* 400px to 599 mobile view*/
@@ -781,7 +801,7 @@ section {
 
 
 /* 300px to 399px */
-@media (min-width: 300px) and (max-width: 399px){
+/* @media (min-width: 300px) and (max-width: 399px){
     
     .card {
         display: grid;
@@ -823,10 +843,10 @@ section {
         font-weight: 200;
         padding: 1.5rem 10rem 0.5rem 2rem;
     }
-}
+} */
 
 /* 100px to 299px */
-@media (min-width: 100px) and (max-width: 299px){
+/* @media (min-width: 100px) and (max-width: 299px){
     .card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -856,7 +876,7 @@ section {
      .recents_container {
         width: 90%;
      }
-}
+} */
 
 /* < 899px */
 @media (max-width: 899px) {
