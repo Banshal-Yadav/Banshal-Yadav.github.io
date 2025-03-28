@@ -4,7 +4,6 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .banner {
     height: 20px;
     display: flex;
@@ -101,7 +100,7 @@
 }
 
 #search_container {
-    padding: 0.5rem;
+    padding: 1.5rem;
     padding-bottom: 1.5rem;
     display: flex;
     justify-content: center;
@@ -154,7 +153,7 @@ form {
 .card_sec_heading {
     background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
     font-family: monospace;
-    padding: 0.3rem 0rem 0.5rem 4rem;
+    padding: 0.3rem 40% 0.5rem 40%; /* top, right   , bottom, left */
 }
 .notes_txt_gradient {
     background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205), rgb(10, 117, 99));
@@ -172,6 +171,8 @@ form {
     display:flex;
     padding: 1.5rem;
     padding-top: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
     gap: 1rem;
     background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
     height: auto;
@@ -450,6 +451,7 @@ form {
     border-style: solid;
     border-color: rgb(79, 78, 78);
     border-width: 0.0605rem 0rem 0rem 0rem;
+    padding: 0 15% 0 15%;
 }
 
 .skills_header {
@@ -490,21 +492,17 @@ form {
 /* working on */
 .working_on_container {
     background-color:  rgb(17, 16, 22);
-   
     border-style: solid;
     border-color: rgb(57, 57, 57);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
-    padding: 1rem;
-    
-    
+    padding: 2% 15% 0 15%;
 }
 .working_on_heading {
     background: linear-gradient(45deg,rgb(194, 84, 84), rgb(50, 158, 205) , rgb(10, 117, 99));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     color: lightgray;
     font-family: monospace;
     font-size: 35px;
@@ -514,7 +512,7 @@ form {
 }
 
 .working_on_info {
-   padding: 3rem;;
+    padding: 2% 15% 5% 7%;
 }
 .work_list {
    padding: 0.5rem;
