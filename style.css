@@ -190,22 +190,16 @@ form {
     gap: 1rem;
 }
 #suggestion_one, #suggestion_two, #suggestion_three{
+    background-color: rgb(39, 38, 38, 0.34);
+    backdrop-filter: blur(5px);
     border-style: solid;
-    border-radius: 3rem;
-    border-width: 0.3px;
-    border-color: rgb(72, 72, 72);
-    padding: 0.7rem;
-    font-size: 15px;
+    border-color: rgb(50, 49, 46);
+    border-width: 0.1rem;
+    height: fit-content;
+    padding:1rem;
+    border-radius: 1rem;
+    color: rgb(162, 160, 153);
     transition: transform 0.3s ease;
-}
-#suggestion_one {
-    background-color: rgb(50, 66, 50);
-}
-#suggestion_two {
-    background-color: rgb(69, 53, 53);
-}
-#suggestion_three {
-    background-color: rgb(36, 34, 36);
 }
 #suggestion_one:hover, #suggestion_two:hover, #suggestion_three:hover{
    transform: translateY(-5px);
@@ -734,6 +728,11 @@ section {
     }
     .search_suggetion_container{
         padding-bottom: 2.5rem;
+    }
+    #suggestion_one, #suggestion_two, #suggestion_three{
+        border-width: 0.1rem;
+        height: fit-content;
+        padding: 0.7rem;
     }
     .card_sec_heading {
         display: flex;
