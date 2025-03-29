@@ -5,13 +5,14 @@
 }
 
 .banner {
-    height: 20px;
+    height: 10px;
     display: flex;
     justify-content: center;
-    font-size: 12px;;
+    font-style: italic;
+    font-size: 10px;
     padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.622); /*  */
+    color: rgb(74, 75, 60);
+    background-color:  rgb(17, 16, 22);
     backdrop-filter: blur(5px);
 }
 
@@ -40,7 +41,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    font-size: 4rem;
+    font-size: 5rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
     color: rgb(188, 214, 224);
@@ -103,13 +104,14 @@
 }
 #about_me{
     font-size: large;
-    color: gray;
+    color: rgb(162, 127, 84);
 }
 .about_me_para{
     padding: 0.4rem;
+    color: rgb(188, 185, 43);
 }
 .game{
-    color: gray;
+    color: rgb(153, 166, 76);
     transition-duration: 0.3s;
 }
 .game:hover{
@@ -134,7 +136,7 @@
 }
 
 form {
-    width: 20rem;
+    width: 25rem;
 }
 
 #search_bar {
@@ -533,6 +535,7 @@ form {
 }
 .skill_li_head{
     color:rgb(153, 154, 98);
+    font-size: 1.2rem;
 }
 
 .skills_container {
@@ -545,6 +548,7 @@ form {
 }
 .skill-list-body {
     padding: 0.5rem;
+    font-size: 1rem;
 }
 
 .link {
@@ -578,7 +582,7 @@ form {
 
 .working_on_info {
     padding: 2% 15% 5% 7%;
-    
+    font-size: 1rem;
 }
 .work_list {
    color: gray;
@@ -688,8 +692,8 @@ section {
     }
     
     .banner {
-        padding: 4px;
-        font-size: 9px;
+        padding: 10px;
+        font-size: 10px;
         height: 10px;
     }
    
