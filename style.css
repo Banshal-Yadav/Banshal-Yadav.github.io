@@ -695,6 +695,8 @@ section {
         padding: 10px;
         font-size: 10px;
         height: 10px;
+        color: rgb(74, 75, 60);
+         background-color:  rgb(17, 16, 22);
     }
    
     .nav {
