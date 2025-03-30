@@ -637,7 +637,7 @@ section {
 
 
 /* 400px to 599 mobile view*/
-@media (min-width: 400px) and (max-width: 599px){
+@media (min-width: 300px) and (max-width: 599px){
     .about_me_container{
         padding: 1% 10% 5% 10%;
     }
