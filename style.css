@@ -204,6 +204,9 @@ form {
 #suggestion_one:hover, #suggestion_two:hover, #suggestion_three:hover{
    transform: translateY(-5px);
 }
+.suggestion_link{
+    color:gray;
+}
 
 /* cards */
 .card_sec_heading {
