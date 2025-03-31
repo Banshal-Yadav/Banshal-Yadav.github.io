@@ -54,7 +54,14 @@
      <div class="section_card">
       <div class="search_wrapper">
         <form id="search_container">
-          <input id="search_bar" type="text" placeholder="Search notes">
+          <input id="search_bar" type="text" placeholder="Search notes" list="search_suggestion_list">
+          <!-- basic search suggestions list -->
+          <datalist id="search_suggestion_list">
+            <option value="note"></option>
+            <option value="projects"></option>
+            <option value="blogposts"></option>
+            <option value="resources"></option>
+          </datalist>
           <button id="search_btn" type="submit" ><i class="fa fa-search "></i></button>
         </form>
       </div>
