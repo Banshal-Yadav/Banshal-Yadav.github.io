@@ -223,6 +223,10 @@ form {
     font-size: 35px;
     font-weight: 300;
 }
+.notes_link {
+    color: rgb(183, 107, 76);
+    font-size: 1.1rem;
+}
 
 /* background of the card wrapper */
 .card_container { 
