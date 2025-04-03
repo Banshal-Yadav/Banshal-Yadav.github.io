@@ -97,9 +97,8 @@
 }
 /* About me */
 .about_me_container{
-    padding: 1% 10% 5% 33%;
     display:flex;
-    justify-content:left;
+    justify-content:center;
     background-color: rgb(17, 16, 22);
 }
 #about_me{
