@@ -21,15 +21,16 @@
 }
 
 .sidebar-toggle-btn {
+    padding: 0.3rem;
     position: fixed;
-    top: 1rem;
+    top: 2.5rem;
     left: 1rem;
     z-index: 4;
     background-color: rgb(29, 28, 34);
     color: rgb(108, 162, 136);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 20%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -38,11 +39,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease; 
 }
-
 .sidebar-toggle-btn:hover {
     background-color: rgb(39, 38, 45);
 }
-
 
 .sidebar {
     height: 100%;
@@ -53,7 +52,7 @@
     top: 0;
     left: -200px;
     background-color:  rgb(17, 17, 21);
-    padding-top: 1rem;
+    padding-top: 7rem;
     float: left;
     transition-duration: 0.5s;
 }
@@ -61,15 +60,10 @@
 .sidebar-toggle:checked ~ .sidebar{
    left: 0;
 }
-.sidebar:hover {
-    width: fit-content;
-}
-
 
 .sidebar_top {
     color: rgb(108, 162, 136);
     font-size: 1.4rem;
-    padding-bottom: 12.5rem;
 }
 
 .sidebar_opt_heading{
@@ -87,7 +81,7 @@
 .sidebar_option{
     text-decoration: none;
     color: gray;
-    padding: 1rem;
+    padding: 0.9rem;
     display: block;
 }
 .sidebar_option:hover{
@@ -100,11 +94,9 @@
 
 .tags {
     background-color: rgb(105, 135, 149);
-    border-radius: 0.6rem;
-    padding: 0.2rem;
+    border-radius: 0.7rem;
+    padding: 0.3rem;
 }
-
-
 
 .header {
     height: fit-content;
