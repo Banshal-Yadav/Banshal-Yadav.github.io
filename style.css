@@ -18,7 +18,7 @@
 
 .sidebar {
     height: 100%;
-    width: 10rem;
+    width: 3rem;
     position:fixed;
     z-index: 3; /* leep it on top layer */
     overflow-x: hidden;
@@ -26,15 +26,32 @@
     left: 0;
     background-color: #3b3a3a;
     padding-top: 1rem;
+    transition-duration: 0.3s;
+}
+.sidebar_option_container{
+    padding: 0.5rem;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.1rem;
+    border-left: 0;
+    border-right: 0;
+}
+.sidebar_heading{
+    color: gray;
 }
 .sidebar_option{
+    text-decoration: none;
+    color: gray;
     padding: 1rem;
     display: block;
 }
+.sidebar_option:hover{
+    color:rgb(164, 165, 70);
+}
 
-/* .sidebar:hover {
+.sidebar:hover {
     width: 10rem;
-} */
+}
 
 .header {
     height: fit-content;
