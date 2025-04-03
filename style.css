@@ -18,15 +18,29 @@
 
 .sidebar {
     height: 100%;
-    width: 3rem;
+    width: fit-content;
     position:fixed;
     z-index: 3; /* leep it on top layer */
     overflow-x: hidden;
     top: 0;
     left: 0;
-    background-color: #3b3a3a;
+    background-color:  rgb(17, 17, 21);
     padding-top: 1rem;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
+}
+.sidebar:hover {
+    width: fit-content;
+}
+
+
+.sidebar_top {
+    color: rgb(108, 162, 136);
+    font-size: 1.4rem;
+    padding-bottom: 12.5rem;
+}
+
+.sidebar_opt_heading{
+    color: gray;
 }
 .sidebar_option_container{
     padding: 0.5rem;
@@ -36,9 +50,7 @@
     border-left: 0;
     border-right: 0;
 }
-.sidebar_heading{
-    color: gray;
-}
+
 .sidebar_option{
     text-decoration: none;
     color: gray;
@@ -49,9 +61,17 @@
     color:rgb(164, 165, 70);
 }
 
-.sidebar:hover {
-    width: 10rem;
+.tag_container{
+    padding: 1rem;
 }
+
+.tags {
+    background-color: lightgray;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+}
+
+
 
 .header {
     height: fit-content;
