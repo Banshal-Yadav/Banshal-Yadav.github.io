@@ -146,21 +146,26 @@ form {
     border-color: rgb(50, 49, 46);
     border-width: 0.1rem;
     padding-left: 10px;
-    height: 3rem;
+    height: 3rem;  
     width: 100%;
     outline: none;
     border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;  
+    border-bottom-left-radius: 0.5rem; 
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; 
     transition-duration: 0.3s ;
     color: rgb(162, 160, 153);
 }
+
 #search_bar::placeholder {
     color: rgb(126, 125, 125);
 }
 
 #search_bar:hover {
+    border-color: white;
+    width: 102%;
+    /* shadow */
+    box-shadow: 0 0 35px rgb(90, 103, 58); /* added shadow */
     border-color: white;
     width: 102%;
 }
@@ -182,6 +187,12 @@ form {
     height: fit-content;
     display:flex; /* to make suggestion buttons in the middle*/
     justify-content: center;
+    border-style: solid;
+    border-color: rgb(50, 49, 46);
+    border-width: 0.1rem;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top:none;
 }
 .search_suggetions{
     width: fit-content;
@@ -204,6 +215,7 @@ form {
 #suggestion_one:hover, #suggestion_two:hover, #suggestion_three:hover{
    transform: translateY(-5px);
 }
+
 .suggestion_link{
     color:gray;
 }
@@ -223,8 +235,8 @@ form {
     position: relative;
     z-index: 2; /* to keep gradient on top if any overlayer */
     font-family: monospace;
-    font-size: 35px;
-    font-weight: 300;
+    font-size: 45px;
+    font-weight: 600;
 }
 .notes_link {
     color: rgb(183, 107, 76);
@@ -232,6 +244,9 @@ form {
 }
 
 /* background of the card wrapper */
+.section_card { /* card section background color */
+    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+}
 .card_container { 
     display:flex;
     padding: 1.5rem;
@@ -749,7 +764,6 @@ section {
         padding: 0.7rem;
     }
     .card_sec_heading {
-        display: flex;
         background-color: rgb(80, 80, 71);
         font-family: monospace;
         font-size: 30px;
