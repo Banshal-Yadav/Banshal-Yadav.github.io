@@ -51,7 +51,7 @@
     overflow-x: hidden;
     top: 0;
     left: -200px;
-    background-color:  rgb(17, 17, 21);
+    background-color:  rgb(34, 35, 35);
     padding-top: 7rem;
     float: left;
     transition-duration: 0.5s;
@@ -62,6 +62,7 @@
 }
 
 .sidebar_top {
+    padding: 1rem;
     color: rgb(108, 162, 136);
     font-size: 1.4rem;
 }
@@ -72,8 +73,8 @@
 .sidebar_option_container{
     padding: 0.5rem;
     border-style: solid;
-    border-color: gray;
-    border-width: 0.1rem;
+    border-color: rgb(42, 42, 42);
+    border-width: 0.07rem;
     border-left: 0;
     border-right: 0;
 }
