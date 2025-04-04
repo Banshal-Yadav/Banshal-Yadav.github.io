@@ -8,9 +8,11 @@
 </head>
         <style>
             body {
-                background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22)) ; 
+                background-color: rgb(17, 16, 22);
+                background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22), rgb(19, 18, 24) 100px); 
                 margin: 0;
-                padding: 2% 10% 0% 10% ;
+                padding: 2% 10% 0% 10%;
+                color: rgb(200, 200, 200);
             }
 
             header h2 {
@@ -29,24 +31,26 @@
                 gap: 1rem;
             }
 
-            .note  {
+            .note {
                 height: fit-content;
-                padding:1rem;
+                padding: 1rem;
+                background-color: rgba(25, 24, 30, 0.6);
+                border-radius: 0.5rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             }
             .list {
                 color: gray;
-                padding-left:2rem;
-                padding-bottom:1rem;
+                padding-left: 2rem;
+                padding-bottom: 1rem;
             }
-            
             
             .note_heading {
                 color: rgb(79, 111, 52);
                 padding: 20px 0px 0px 20px;
-                
             }
+            
             .option {
-                padding:0.8rem;
+                padding: 0.8rem;
                 border-style: solid;
                 border-color: rgb(121, 121, 121);
                 border-width: 0.1rem;
@@ -61,51 +65,65 @@
                 color: gray;
                 margin-left: 0.5rem;
                 padding-left: 0.5rem;
+                transition: color 0.3s;
+            }
+            
+            .sourcse_link:hover {
+                color: rgb(120, 150, 180);
             }
 
             .home_btn {
-                    background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    padding: 1%;
-                    font-size: 18px;;
-                    color: white;
-                    text-decoration: none;
-                    transition-duration: 0.5s;
-                }
-                .home_btn:hover {
-                    background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    padding: 1%;
-                    font-size: 18px;;
-                    color: white;
-                    text-decoration: none;
-                }
+                background: linear-gradient(45deg,rgb(237, 226, 226), rgb(211, 213, 216) , rgb(86, 84, 84));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 1%;
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+                transition-duration: 0.5s;
+            }
+            .home_btn:hover {
+                background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 1%;
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+            }
 
-                .details{
-                    width: 60%;
-                    padding: 0rem;
-                    color: rgb(183, 144, 73);
-                    border-style: solid;
-                    border-color: rgb(131, 131, 131);
-                    border-width: 0.1rem; 
-                    border-radius: 0.5rem;
-                }
-                .details_para{
-                    padding: 0.5rem;
-                }
-                .summary {
-                    background-color: rgba(39, 39, 39, 0.442);
-                    padding: 0.5rem;
-                    color: rgb(164, 140, 94);
-                    border-style: solid;
-                    border-color: rgb(106, 106, 106);
-                    border-width: 0.1rem; 
-                    border-radius: 0.5rem;
-                }
+            .details {
+                width: 60%;
+                padding: 0rem;
+                color: rgb(183, 144, 73);
+                border-style: solid;
+                border-color: rgb(131, 131, 131);
+                border-width: 0.1rem; 
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                transition: transform 0.2s ease;
+            }
+            
+            .details:hover {
+                transform: translateY(-2px);
+            }
+            
+            .details_para {
+                padding: 0.5rem;
+            }
+            
+            .summary {
+                background-color: rgba(39, 39, 39, 0.442);
+                padding: 0.5rem;
+                color: rgb(164, 140, 94);
+                border-style: solid;
+                border-color: rgb(106, 106, 106);
+                border-width: 0.1rem; 
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
 
             /* 400px to 599 mobile view*/
             @media (min-width: 400px) and (max-width: 599px){
@@ -118,7 +136,7 @@
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                     padding: 1%;
-                    font-size: 18px;;
+                    font-size: 18px;
                     color: white;
                     text-decoration: none;
                     transition-duration: 0.3s;
@@ -129,7 +147,7 @@
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                     padding: 1%;
-                    font-size: 18px;;
+                    font-size: 18px;
                     color: white;
                     text-decoration: none;
                 }
@@ -152,7 +170,7 @@
                     <details class="details">
                         <summary class="summary">Working on personal website</summary>
                        <p class="details_para"> Developing and refining my personal website to showcase my projects, interests, and experiences.Focusing on improving the user interface and adding new features.
-                        <hr> <a class=" sourcse_link" href="https://banshal-yadav.github.io/personal-website/">Personal-website</a>
+                        <hr> <a class="sourcse_link" href="https://banshal-yadav.github.io/personal-website/">Personal-website</a>
                        </p>
                        </details>
                 </li>
@@ -180,8 +198,8 @@
                         often used to find the shortest path from a source to a destination.<br><br>  
                          These graphs are directed and can be divided into stages where edges only connect vertices from one stage to the next,
                          <br>  not within the same stage or to previous stages.<hr> 
-                         <a class=" sourcse_link" href="https://www.geeksforgeeks.org/multistage-graph-shortest-path/"> Geeksforgeeks</a> 
-                         <a class=" sourcse_link" href="https://youtu.be/9iE9Mj4m8jk?si=GQAPwOVAq-s-Lo1p">YouTube</a></p>
+                         <a class="sourcse_link" href="https://www.geeksforgeeks.org/multistage-graph-shortest-path/"> Geeksforgeeks</a> 
+                         <a class="sourcse_link" href="https://youtu.be/9iE9Mj4m8jk?si=GQAPwOVAq-s-Lo1p">YouTube</a></p>
                        </details>
                 </li>             
             </ul>
