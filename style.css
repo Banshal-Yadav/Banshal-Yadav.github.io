@@ -138,7 +138,7 @@
 
 .nav {
     background-color: rgb(17, 16, 22);
-    padding: 2.2rem;
+    padding: 4%;
     height: fit-content;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -178,9 +178,14 @@
     /* box-shadow: rgb(39, 38, 38)  0px 10px 40px; */
     transform: translateY(-3px);
 }
+
+.hr{
+    padding: 3% 30% 3% 30%;
+}
+
 /* About me */
 .about_me_sec{
-    padding: 2% 5% 1% 5%;
+    padding: 0% 5% 1% 5%;
     display: flex;
     justify-content: center;
 }
@@ -190,7 +195,7 @@
     justify-content:center;
     width: fit-content;
     background-color: rgb(17, 16, 22);
-    border-radius: 0.7rem;
+    border-radius: 0.1rem;
     border-style: solid;
     border-width: 0.1rem;
     border-color: rgb(121, 140, 73);
@@ -198,7 +203,6 @@
 }
 .about_me_container:hover {
     box-shadow: 0px 0px 20px rgba(12, 12, 10, 0.5);
-    padding: 2rem;
     transform: scale(1.005);
 }
 #about_me{
@@ -227,8 +231,9 @@
 
 #search_container {
     padding: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: rem;
     padding-right: 65px;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     gap:10px;
@@ -282,7 +287,7 @@ form {
 /* search suggetions */
 .search_suggetion_container{
     background-color: rgb(17, 16, 22);
-    padding: 1% 0% 5% 0%;
+    padding: 1% 0% 3% 0%;
     height: fit-content;
     display:flex; /* to make suggestion buttons in the middle*/
     justify-content: center;
@@ -768,6 +773,7 @@ section {
 @media (min-width: 400px) and (max-width: 599px){
     .about_me_sec {
         padding: 5%;
+        padding-top: 0%;
     }
     .about_me_container{
         padding: 10% 10% 10% 10%;
