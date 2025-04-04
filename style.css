@@ -180,7 +180,14 @@
 }
 
 .hr{
-    padding: 3% 30% 3% 30%;
+    padding: 3% 40% 3% 40%;
+}
+.hr hr {
+    border: none;
+    border-top:1px dashed rgb(121, 140, 73);
+    border-width: 0.15rem;
+    height: 1px;
+    margin: 0;
 }
 
 /* About me */
@@ -195,7 +202,7 @@
     justify-content:center;
     width: fit-content;
     background-color: rgb(17, 16, 22);
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
     border-style: solid;
     border-width: 0.1rem;
     border-color: rgb(121, 140, 73);
