@@ -804,23 +804,7 @@ section {
 /* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
     .up_btn {
-        float: bottom;
-        z-index: 5;
-        position: fixed;
-        background-color: rgb(39, 38, 38, 0.34);
-        backdrop-filter: blur(5px);
-        border-style: solid;
-        border-color: rgb(105, 103, 99);
-        border-width: 0.1rem;
-        display: flex;
-        justify-content: center;
-        height: 1rem;
-        width: 2rem;
-        padding: 0.5rem;
         margin: 60% 0% 0% 85%;
-        border-radius: 1rem;
-        color: rgb(162, 160, 153);
-        transition: transform 0.3s ease;
     }
     .about_me_sec {
         padding: 5%;
