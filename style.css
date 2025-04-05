@@ -3,11 +3,12 @@
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } */
- 
+
 * {
     margin:0;
     padding: 0;
     font-family: 'VT323', monospace;
+    text-shadow: 0 0 2px rgb(209, 171, 17); /* experimental background glow*/
 }
 .scalelines{
     position: fixed;
@@ -30,9 +31,9 @@
     display: flex;
     justify-content: center;
     font-style: italic;
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
-    color: rgb(74, 75, 60);
+    color: rgb(107, 107, 98);
     background-color:  rgb(17, 16, 22);
     backdrop-filter: blur(5px);
 }
