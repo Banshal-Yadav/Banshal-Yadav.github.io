@@ -1,22 +1,28 @@
-* {
+/* * {
     margin:0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+ 
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'VT323', monospace;
 }
 .scalelines{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw; /* to cover full view port width*/
+    height: 100vh; /* to cover full viewport height*/
     background: linear-gradient(
         to bottom,
         rgba(39, 39, 39, 0.3) 50%,
         rgba(0, 0, 0, 0.1) 50%
     );
     background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 10;
+    pointer-events: none; /* clicks will not work for this element */
+    z-index: 10; /* to make it top layer*/
 }
 
 .banner {
@@ -124,7 +130,6 @@
 .header_main {
     height: fit-content;
     width:100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     /* background-image: linear-gradient(45deg, rgb(198, 235, 97), rgb(76, 117, 150)); */
     display:flex;
@@ -140,7 +145,7 @@
     -webkit-text-fill-color: transparent;
     
     font-size: 5rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
     font-weight: 500;
     color: rgb(188, 214, 224);
     display:flex;
@@ -150,12 +155,14 @@
 .banshal_logo_txt{
     background-color: rgb(17, 16, 22);
 }
+#logo_txt {
+    font-family: 'VT323', monospace;
+}
 
 .nav {
     background-color: rgb(17, 16, 22);
     padding: 4%;
     height: fit-content;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 350;
     display:flex;
@@ -374,7 +381,6 @@ form {
 /* cards */
 .card_sec_heading {
     background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
-    font-family: monospace;
     padding: 1rem 40% 1rem 19%; /* top, right  , bottom, left */
     
 }
@@ -385,7 +391,6 @@ form {
     -webkit-text-fill-color: transparent;
     position: relative;
     z-index: 2; /* to keep gradient on top if any overlayer */
-    font-family: monospace;
     font-size: 45px;
     font-weight: 600;
 }
@@ -476,13 +481,11 @@ form {
     color:rgb(228, 175, 110);
     font-size: 20px;
     font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 .card_body{
     background-color:  rgb(50, 49, 49);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1rem 0.5rem 1rem 0.5rem;
     height: 4rem;
     border-top-left-radius: 0.25rem;
@@ -695,7 +698,6 @@ form {
     -webkit-text-fill-color: transparent;
     
     color: lightgray;
-    font-family: monospace;
     font-size: 35px;
     font-weight: 200;
     padding: 3rem;
@@ -740,7 +742,6 @@ form {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: lightgray;
-    font-family: monospace;
     font-size: 35px;
     font-weight: 200;
     padding-left: 2rem;
@@ -767,7 +768,6 @@ footer {
     color: rgb(186, 186, 186);
     font-size: 15px;
     font-weight: 590;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact_details {
@@ -780,7 +780,6 @@ footer {
     color: rgb(186, 186, 186);
     font-size: 15px;
     font-weight: 590;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* fold longer-text in section  */
@@ -923,7 +922,6 @@ section {
     }
     .card_sec_heading {
         background-color: rgb(80, 80, 71);
-        font-family: monospace;
         font-size: 30px;
         font-weight: 300;
         padding: 0.5rem 3rem 0rem 3rem;
