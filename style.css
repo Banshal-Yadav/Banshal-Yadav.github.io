@@ -744,9 +744,13 @@ form {
     border-radius: 0.2rem;
     transition-duration: 0.3s;
 }
-#programming{
-    padding: rem;
+.skill_list .devicon {
+    font-size: 2rem; 
+    margin-right: 0.7rem; /* Space between icon and text (mr-2) */
+    color: #d1d5db; 
 }
+
+
 
 .link {
   color:gray;
