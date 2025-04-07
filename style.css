@@ -19,7 +19,7 @@
     height: 100vh; /* to cover full viewport height*/
     background: linear-gradient(
         to bottom,
-        rgba(39, 39, 39, 0.3) 50%,
+        rgba(39, 39, 39, 0.249) 50%,
         rgba(0, 0, 0, 0.1) 50%
     );
     background-size: 100% 4px;
@@ -157,6 +157,7 @@
 }
 #logo_txt {
     font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 1px rgb(209, 171, 17);
 }
 
 .nav {
@@ -263,18 +264,18 @@
 }
 #about_me{
     font-size: large;
-    color: rgb(162, 127, 84);
+    color: rgba(244, 118, 28, 0.807);
 }
 .about_me_para{
     padding: 0.4rem;
     color: rgb(188, 185, 43);
 }
 .game{
-    color: rgb(153, 166, 76);
+    color: rgb(160, 178, 57);
     transition-duration: 0.3s;
 }
 .game:hover{
-    color:rgba(112, 118, 94, 0.983);
+    color:rgba(163, 177, 122, 0.983);
 }
 
 /* SEARCH */
@@ -373,10 +374,12 @@ form {
     transition: transform 0.3s ease;
 }
 #suggestion_one:hover, #suggestion_two:hover, #suggestion_three:hover{
+   border-color: rgb(159, 116, 16);
    transform: translateY(-5px);
 }
 
 .suggestion_link{
+    font-size: 1rem;
     color:gray;
 }
 
