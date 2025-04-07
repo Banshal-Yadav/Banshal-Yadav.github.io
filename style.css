@@ -10,6 +10,7 @@
     font-family: 'VT323', monospace;
     text-shadow: 0 0 2px rgb(209, 171, 17); /* experimental background glow*/
 }
+/* crt-tv effect */
 .scalelines{
     position: fixed;
     top: 0;
@@ -144,13 +145,12 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    font-size: 5rem;
+    font-size: 6rem;
     
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(188, 214, 224);
     display:flex;
     justify-content: center;
-    background-color:  rgb(17, 16, 22);
 }
 .banshal_logo_txt{
     background-color: rgb(17, 16, 22);
@@ -203,7 +203,6 @@
 
 
 .up_btn {
-    float: bottom;
     z-index: 5;
     position: fixed;
     background-color: rgb(39, 38, 38, 0.34);
@@ -216,7 +215,8 @@
     height: 1rem;
     width: 2rem;
     padding: 0.5rem;
-    margin: 0% 0% 0% 95%;
+    margin-left: 85vw;
+    margin-top: 85vh;
     border-radius: 1rem;
     transition: transform 0.3s ease;
 }
@@ -713,7 +713,7 @@ form {
 
 .skills_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     color: gray;
     padding: 4rem;
@@ -852,14 +852,21 @@ section {
     #search_btn {
         height: 2.9rem;
      }
+     .skills_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        color: gray;
+        padding: 1% 1% 10% 1%;
+    }
 }
 
 
 /* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
-    .up_btn {
-        margin: 60% 0% 0% 85%;
-    }
+    /* .up_btn {
+        margin: 85% 0% 0% 80%;
+    } */
     .about_me_sec {
         padding: 5%;
         padding-top: 0%;
@@ -869,7 +876,7 @@ section {
     }
     .card_wrapper {
         padding: 0.5rem;
-        height: 20rem; /* fix height for mobile devices */
+        height: 25rem; /* fix height for mobile devices */
     }
     
     .card_container {
@@ -903,8 +910,8 @@ section {
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        font-size: 3.5rem;
-        font-weight: 500;
+        font-size: 4.5rem;
+        font-weight: 600;
         padding-top: 5%;
         padding-bottom: 5%;
         padding-left: 10%;
@@ -1012,6 +1019,9 @@ section {
         background-color: rgb(17, 16, 22); /* changed color to darker to match the recent card background*/
         border-color: rgb(108, 108, 108);
     }
+
+    /* skills section */
+
     .skills_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1062,6 +1072,13 @@ section {
 }
 
 @media (max-width: 399px) {
+    .banner{
+        font-size: 0.64rem;
+    }
+    .logo{
+        padding: 2rem;
+        font-size: 3.5rem;
+    }
     #suggestion_one, #suggestion_two, #suggestion_three{
         border-width: 0.1rem;
         height: fit-content;
@@ -1069,7 +1086,7 @@ section {
     }
     .card_wrapper {
         padding: 0.5rem;
-        height: 20rem; /* fix height for mobile devices */
+        height: 25rem; /* fix height for mobile devices */
     }
     
     .card_container {
@@ -1091,18 +1108,25 @@ section {
         overflow-y: scroll; /* add scroll-bar*/
         overflow-x: hidden; /* hide horizontal scrollbar */
     }
+    .notes_txt_gradient{
+        font-size: 2.3rem;
+    }
   
     .skills_container {
         grid-template-columns: 1fr;
         gap: 1rem;
         padding: 0.5rem;
+        padding-bottom: 2rem;
     }
 
     .skills_li_head {
-       font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 
     .skill-list-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
         padding: 0 5% 0 5%;
     }
 
