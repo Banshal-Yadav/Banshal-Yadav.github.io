@@ -46,6 +46,7 @@
     --card-shadow: rgba(12, 12, 10, 0.5); /* shadow effects */
   }
 
+
 /* crt-tv effect */
 .scalelines{
     position: fixed;
@@ -113,7 +114,7 @@
     overflow-x: hidden;
     top: 0;
     left: -300px;
-    background:  var(--medium-bg-grn);
+    background:  var(--card-gradient);
     padding-top: 7rem;
     float: left;
     transition-duration: 0.5s;
@@ -278,8 +279,10 @@
     transform: scaleY(1.1);
 }
 
+/* hr for about_me section */
 .hr{
     padding: 3% 40% 3% 40%;
+    background: var(--medium-bg-grn);
 }
 .hr hr {
     border: none;
@@ -290,8 +293,24 @@
     box-shadow: none;
 }
 
+/* primary hr */
+.primary_hr{
+    padding: 1% 30% 1% 30%;
+    background: var(--dark-bg);
+}
+.primary_hr hr {
+    border: none;
+    border-top: 0.15rem solid rgb(121, 140, 73);
+    background: none;
+    height: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+
 /* About me */
 .about_me_sec{
+    background: var(--medium-bg-grn);
     padding: 0% 5% 1% 5%;
     display: flex;
     justify-content: center;
@@ -844,7 +863,7 @@ form {
     border-color: var(--dark-bg);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
-    padding: 2% 15% 2% 15%;
+    padding: 2% 15% 2% 20%;
 }
 .working_on_heading {
     background: var(--gradient-secondary);
@@ -854,7 +873,7 @@ form {
     color: lightgray;
     font-size: 35px;
     font-weight: 200;
-    padding-left: 2rem;
+    padding-left: 0rem;
     padding-top: 1.5rem;
 }
 
