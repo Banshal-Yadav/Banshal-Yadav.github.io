@@ -4,12 +4,48 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } */
 
+
+/* for gradient on txt */
+/* .element {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
 * {
     margin:0;
     padding: 0;
     font-family: 'VT323', monospace;
     text-shadow: 0 0 2px rgb(209, 171, 17); /* experimental background glow*/
 }
+
+:root {
+    /* Primary Colors */
+    --dark-bg: rgb(17, 16, 22);         /* main background */
+    --medium-bg: rgb(29, 28, 34);       /* secondary/card backgrounds */
+    --medium-bg-grn: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+    --border-color: rgb(50, 49, 46);    /* border elements */
+    --text-primary: rgb(162, 160, 153); /* main text color */
+    --text-accent: rgb(188, 175, 110);  /* accent text for headings */
+    
+    /* Accent Colors */
+    --accent-teal: rgb(108, 162, 136);  /* sidebar & UI accents */
+    --accent-amber: rgb(183, 107, 76);  /* link colors */
+    --accent-olive: rgb(153, 154, 98);  /* highlights and UI elements */
+    
+    /* Gradients */
+    --card-gradient: linear-gradient(45deg, var(--medium-bg), rgb(25, 24, 30));
+    --gradient-primary: linear-gradient(45deg, rgb(195, 36, 36), rgb(212, 168, 74), rgb(49, 130, 144));
+    --gradient-secondary: linear-gradient(45deg, rgb(203, 192, 192), rgb(50, 158, 205), rgb(10, 117, 99));
+    --gradient-hover: linear-gradient(45deg, rgb(206, 134, 134), rgb(106, 125, 169), rgb(194, 90, 83));
+    
+    /* Effects */
+    --text-glow: rgb(209, 171, 17);     /* text shadow color */
+    --overlay-bg: rgba(29, 28, 34, 0.7); /* semi-transparent overlays */
+    --card-shadow: rgba(12, 12, 10, 0.5); /* shadow effects */
+  }
+
 /* crt-tv effect */
 .scalelines{
     position: fixed;
@@ -34,7 +70,7 @@
     font-size: 1rem;
     padding: 5px;
     color: rgb(124, 180, 201);
-    background-color:  rgb(17, 16, 22);
+    background-color:  var(--dark-bg);
     backdrop-filter: blur(5px);
 }
 
@@ -77,7 +113,7 @@
     overflow-x: hidden;
     top: 0;
     left: -300px;
-    background-color:  rgb(34, 35, 35);
+    background:  var(--medium-bg-grn);
     padding-top: 7rem;
     float: left;
     transition-duration: 0.5s;
@@ -89,7 +125,7 @@
 
 .sidebar_top {
     padding: 1rem;
-    color: rgb(108, 162, 136);
+    color: var(--accent-teal);
     font-size: 2.4rem;
 }
 
@@ -102,7 +138,7 @@
     gap: 0.5rem;
     padding: 0.5rem;
     border-style: solid;
-    border-color: rgb(42, 42, 42);
+    border-color: var(--border-color);
     border-width: 0.07rem;
     border-left: 0;
     border-right: 0;
@@ -110,17 +146,17 @@
 
 .sidebar_option{
     text-decoration: none;
-    color: gray;
+    color: var(--text-primary);
     padding: 0.5rem;
     display: block;
     border-style: solid;
     border-color: gray;
     border-width: 1px;
     border-radius: 0.3rem;
-    background-color: rgba(27, 26, 30, 0.694);
+    background-color: var(--medium-bg);
 }
 .sidebar_option:hover{
-    color:rgb(164, 165, 70);
+    color: rgb(164, 165, 70); /* Olive highlight */
 }
 
 .tag_container{
@@ -137,7 +173,7 @@
     height: fit-content;
     width: 100%;
     /* background-image: repeating-linear-gradient(45deg,rgb(34, 33, 33),rgb(19, 19, 146), rgb(65, 60, 60), rgb(28, 28, 28)) ;   */
-    background-image: repeating-linear-gradient(45deg, rgb(17, 16, 22)) ; 
+    background-color: var(--dark-bg) ; 
 }
 
 .header_main {
@@ -147,7 +183,7 @@
     /* background-image: linear-gradient(45deg, rgb(198, 235, 97), rgb(76, 117, 150)); */
     display:flex;
     justify-content: center;
-    background-color:  rgb(17, 16, 22); /* rgb(155, 160, 122) */
+    background-color:  var(--dark-bg);
     
 }
 
@@ -165,7 +201,7 @@
     justify-content: center;
 }
 .banshal_logo_txt{
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
 }
 #logo_txt {
     font-family: 'VT323', monospace;
@@ -173,7 +209,7 @@
 }
 
 .nav {
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
     padding: 4%;
     height: fit-content;
     font-size: 15px;
@@ -200,7 +236,7 @@
     transition-duration: 0.5s;
 }
 .nav_txt:hover {
-    background: linear-gradient(45deg,rgb(206, 134, 134), rgb(106, 125, 169) , rgb(194, 90, 83));
+    background: var(--gradient-hover);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -235,10 +271,10 @@
     transition: transform 0.3s ease;
 }
 #up_btn_icon{
-    color: rgb(149, 164, 98);
+    color: var(--accent-olive);
 }
 .up_btn:hover {
-    box-shadow: 0 0 15px rgb(35, 35, 35);
+    box-shadow: 0 0 15px var(--dark-bg);
     transform: scaleY(1.1);
 }
 
@@ -247,10 +283,11 @@
 }
 .hr hr {
     border: none;
-    border-top:1px dashed rgb(121, 140, 73);
-    border-width: 0.15rem;
-    height: 1px;
+    border-top: 0.15rem dashed rgb(121, 140, 73);
+    background: none;
+    height: 0;
     margin: 0;
+    box-shadow: none;
 }
 
 /* About me */
@@ -264,7 +301,7 @@
     display:flex;
     justify-content:center;
     width: fit-content;
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
     border-radius: 0.5rem;
     border-style: solid;
     border-width: 0.1rem;
@@ -272,7 +309,7 @@
     transition-duration: 0.2s;
 }
 .about_me_container:hover {
-    box-shadow: 0px 0px 20px rgba(12, 12, 10, 0.5);
+    box-shadow: 0px 0px 20px var(--dark-bg);
     transform: scale(1.005);
 }
 #about_me{
@@ -293,7 +330,7 @@
 
 /* SEARCH */
 .search_wrapper {
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -314,10 +351,10 @@ form {
 }
 
 #search_bar {
-    background-color: rgb(39, 38, 38, 0.34);
+    background-color: rgba(39, 38, 38, 0.34);
     backdrop-filter: blur(5px);
     border-style: solid;
-    border-color: rgb(50, 49, 46);
+    border-color: var(--border-color);
     border-width: 0.1rem;
     padding-left: 10px;
     height: 3rem;  
@@ -356,13 +393,13 @@ form {
 
 /* search suggetions */
 .search_suggetion_container{
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
     padding: 1% 0% 3% 0%;
     height: fit-content;
     display:flex; /* to make suggestion buttons in the middle*/
     justify-content: center;
     border-style: solid;
-    border-color: rgb(50, 49, 46);
+    border-color: var(--border-color);
     border-width: 0.1rem;
     border-bottom-right-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
@@ -375,10 +412,10 @@ form {
     gap: 1rem;
 }
 #suggestion_one, #suggestion_two, #suggestion_three{
-    background-color: rgb(39, 38, 38, 0.34);
-    backdrop-filter: blur(5px);
+    background-color: rgba(39, 38, 38, 0.34);
+  backdrop-filter: blur(5px);
     border-style: solid;
-    border-color: rgb(50, 49, 46);
+    border-color: var(--border-color);
     border-width: 0.1rem;
     height: fit-content;
     padding:1rem;
@@ -403,7 +440,7 @@ form {
     
 }
 .notes_txt_gradient {
-    background: linear-gradient(45deg,rgb(203, 192, 192), rgb(50, 158, 205), rgb(10, 117, 99));
+    background: var(--gradient-secondary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -413,13 +450,13 @@ form {
     font-weight: 600;
 }
 .notes_link {
-    color: rgb(183, 107, 76);
+    color: var(--accent-amber);
     font-size: 1.1rem;
 }
 
 /* background of the card wrapper */
 .section_card { /* card section background color */
-    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+    background: var(--card-gradient);
 }
 .card_container { 
     display:flex;
@@ -428,7 +465,7 @@ form {
     padding-left: 15%;
     padding-right: 15%;
     gap: 1rem;
-    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+    background: var(--medium-bg-grn); /* Use your defined variable */
     height: auto;
 }
 
@@ -439,17 +476,17 @@ form {
     border-radius: 0.61rem;
      /* background-image: repeating-linear-gradient(45deg, rgb(27, 27, 27), rgb(51, 49, 49), rgb(41, 40, 40)); */
     /* backdrop-filter: blur(6px); */ /* blur effect */
-    background-color: rgb(17, 16, 22);   
+    background-color: var(--dark-bg);  
     outline-style:solid;
     outline-width: 0.1rem;
-    outline-color: rgb(91, 93, 85);
+    outline-color: var(--border-color);
     box-sizing: border-box;
 }
 .card {
     height:fit-content ;
     padding-top: 5px;
     /* background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28)); */
-    background-color: rgb(17, 16, 22); 
+    background-color: var(--dark-bg); 
     justify-content: center;
     border-style: solid;
     border-width: 0.01rem;
@@ -474,7 +511,7 @@ form {
     min-width: 150px;
     box-sizing: border-box;
     font-size: large;
-    background-color: rgb(29, 28, 34);  /* rgb(240, 128, 12); */
+    background-color: var(--medium-bg);  /* rgb(240, 128, 12); */
     /* border radius */
     border-top-left-radius: 0.2rem;
     border-top-right-radius: 0.2rem;
@@ -496,7 +533,7 @@ form {
     padding: 0rem 0rem 0.2rem 0.3rem;
 }
 .card_heading {
-    color:rgb(228, 175, 110);
+    color: var(--text-accent);
     font-size: 20px;
     font-weight: 500;
 
@@ -520,7 +557,7 @@ form {
 }
 
 .card_nav_footer {
-    color: gray;
+    color: var(--text-primary);
     text-decoration: none;;
     font-size: 0.7rem;
 }
@@ -583,7 +620,7 @@ form {
 
 /* recents */
 .recents_container{
-    background-color: rgb(17, 16, 22);
+    background-color: var(--dark-bg);
     display: flex;
     justify-content: center;
     padding-bottom: 0rem;
@@ -612,7 +649,7 @@ form {
     max-width:230px;
     flex-shrink: 0;
     width: 100%;
-    background: linear-gradient(45deg,rgb(34, 34, 34), rgb(32, 32, 32));
+    background: var(--card-gradient);
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 1px;
@@ -629,7 +666,7 @@ form {
     box-sizing: border-box; /* include padding in width calculation*/
     word-wrap: break-word;
     padding: 0.5rem;
-    color: gray;
+    color: var(--text-primary);
     line-height: 1;
 }
 
@@ -719,15 +756,15 @@ form {
 
 /* skills */
 .section_skils{
-    background-color:  rgb(17, 16, 22);
+    background-color:  var(--dark-bg);
     border-style: solid;
-    border-color: rgb(79, 78, 78);
+    border-color: var(--dark-bg);
     border-width: 0.0605rem 0rem 0rem 0rem;
     padding: 0 15% 0 15%;
 }
 
 .skills_header {
-    background: linear-gradient(45deg,rgb(233, 231, 231), rgb(50, 158, 205) , rgb(10, 117, 99));
+    background: var(--gradient-secondary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -739,7 +776,7 @@ form {
 }
 .skill_li_head{
     height: 2.5rem;
-    color:rgb(153, 154, 98);
+    color: var(--accent-olive);
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -774,7 +811,7 @@ form {
     box-sizing: border-box;
     padding-left: 1rem;
     font-size: large;
-    background-color: rgb(29, 28, 34);  /* rgb(240, 128, 12); */
+    background-color:var(--medium-bg);  /* rgb(240, 128, 12); */
     /* border radius */
     border-radius: 0.2rem;
     transition-duration: 0.2s;
@@ -802,15 +839,15 @@ form {
 
 /* working on */
 .working_on_container {
-    background-color:  rgb(17, 16, 22);
+    background-color:  var(--dark-bg);
     border-style: solid;
-    border-color: rgb(57, 57, 57);
+    border-color: var(--dark-bg);
     border-width: 0.1rem 0rem 0rem 0rem; 
     height:auto;
     padding: 2% 15% 2% 15%;
 }
 .working_on_heading {
-    background: linear-gradient(45deg,rgb(187, 180, 180), rgb(50, 158, 205) , rgb(10, 117, 99));
+    background: var(--gradient-secondary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -826,7 +863,7 @@ form {
     font-size: 1rem;
 }
 .work_list {
-   color: gray;
+    color: var(--text-primary);
 }
 
 /* footer */
@@ -838,7 +875,7 @@ footer {
 .footer_txt  {
     padding: 1.4rem;
     padding-top: 3rem;
-    color: rgb(186, 186, 186);
+    color: var(--text-primary);
     font-size: 15px;
     font-weight: 590;
 }
@@ -938,7 +975,7 @@ section {
     }
 
     .logo {
-        background: linear-gradient(45deg,rgb(200, 163, 163), rgb(212, 168, 74) , rgb(21, 1, 67));
+        background: var(--gradient-primary);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1002,7 +1039,7 @@ section {
         padding: 0.7rem;
     }
     .card_sec_heading {
-        background-color: rgb(80, 80, 71);
+        background: var(--card-gradient);
         font-size: 30px;
         font-weight: 300;
         padding: 0.5rem 3rem 0rem 3rem;
