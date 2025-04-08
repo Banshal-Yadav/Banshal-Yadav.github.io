@@ -581,7 +581,7 @@ form {
     background-color: transparent;
     padding: 2.5rem;
     padding-top: 1.2rem; 
-    padding-left: 1rem;
+    padding-left: 3.5rem;
     overflow-x: scroll;
 
     display:flex;
@@ -665,7 +665,7 @@ form {
 }
 
 .recent_card_body:hover {
-    transform: scale(1.03);
+    transform: scale(1.5) translateY(2rem);
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 0.1rem;
