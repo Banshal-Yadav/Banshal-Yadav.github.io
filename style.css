@@ -95,9 +95,10 @@
 
 .sidebar_opt_heading{
     color: rgb(206, 162, 112);
+    padding: 0.5rem;
 }
 .sidebar_option_container{
-    padding: 0.5rem;
+    padding: 1rem;
     border-style: solid;
     border-color: rgb(42, 42, 42);
     border-width: 0.07rem;
@@ -108,8 +109,12 @@
 .sidebar_option{
     text-decoration: none;
     color: gray;
-    padding: 0.9rem;
+    padding: 0.5rem;
     display: block;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 1rem;
 }
 .sidebar_option:hover{
     color:rgb(164, 165, 70);
@@ -173,6 +178,7 @@
     display:flex;
     justify-content: center;
 }
+
 .nav_txt_container{
     width: 30rem;
     display:flex;
