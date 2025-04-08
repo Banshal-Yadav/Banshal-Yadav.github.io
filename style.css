@@ -479,7 +479,7 @@ form {
 }
 .card_container { 
     display:flex;
-    padding: 1.5rem;
+    padding: 3rem;
     padding-top: 5px;
     padding-left: 15%;
     padding-right: 15%;
@@ -639,7 +639,7 @@ form {
 
 /* recents */
 .recents_container{
-    background-color: var(--dark-bg);
+    background: var(--medium-bg-grn);
     display: flex;
     justify-content: center;
     padding-bottom: 0rem;
@@ -676,6 +676,7 @@ form {
 }
 
 .recent_header {
+    background-color: var(--medium-bg);
     padding: 1rem;
     padding-left: 0.3rem;
     padding-bottom: 0;
@@ -700,7 +701,7 @@ form {
     width: 8px;  
 }
 
-.recents::-webkit-scrollbar-track {
+/* .recents::-webkit-scrollbar-track {
     background: rgb(50, 50, 50); 
     border-radius: 1rem;
 }
@@ -712,7 +713,7 @@ form {
 
 .recents::-webkit-scrollbar-thumb:hover {
     background: rgb(130, 130, 130); 
-}
+} */
 
 .recent_card_body {
     display: flex;
@@ -721,7 +722,7 @@ form {
     overflow: hidden;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    background-color: rgb(33, 33, 33);
+    background-color: var(--medium-bg);
     transition-duration: 0.4s;
 }
 .recent_card_body img {
@@ -746,7 +747,7 @@ form {
 
 .recent_footer {
     padding: 0.5rem;
-    background-color: rgb(33, 33, 33);
+    background-color: var(--medium-bg);
     border-color: rgb(56, 56, 56);
     color:rgb(188, 188, 188); 
     font-size: 20px;;
@@ -789,8 +790,8 @@ form {
     -webkit-text-fill-color: transparent;
     
     color: lightgray;
-    font-size: 35px;
-    font-weight: 200;
+    font-size: 50px;
+    font-weight: 300;
     padding: 3rem;
 }
 .skill_li_head{
@@ -858,7 +859,7 @@ form {
 
 /* working on */
 .working_on_container {
-    background-color:  var(--dark-bg);
+    background:  var(--medium-bg-grn);
     border-style: solid;
     border-color: var(--dark-bg);
     border-width: 0.1rem 0rem 0rem 0rem; 
@@ -871,8 +872,8 @@ form {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: lightgray;
-    font-size: 35px;
-    font-weight: 200;
+    font-size: 40px;
+    font-weight: 300;
     padding-left: 0rem;
     padding-top: 1.5rem;
 }
@@ -888,7 +889,7 @@ form {
 /* footer */
 footer {
     height:  auto;
-    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
+    background: var(--dark-bg);
 }
 
 .footer_txt  {
