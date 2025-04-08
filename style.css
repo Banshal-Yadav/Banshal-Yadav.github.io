@@ -98,7 +98,9 @@
     padding: 0.5rem;
 }
 .sidebar_option_container{
-    padding: 1rem;
+    display:grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
     border-style: solid;
     border-color: rgb(42, 42, 42);
     border-width: 0.07rem;
@@ -114,7 +116,8 @@
     border-style: solid;
     border-color: gray;
     border-width: 1px;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
+    background-color: rgba(27, 26, 30, 0.694);
 }
 .sidebar_option:hover{
     color:rgb(164, 165, 70);
