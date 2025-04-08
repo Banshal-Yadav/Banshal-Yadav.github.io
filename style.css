@@ -657,7 +657,7 @@ form {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     background-color: rgb(33, 33, 33);
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
 }
 .recent_card_body img {
     border-radius: 0.4rem;
@@ -680,7 +680,7 @@ form {
 }
 
 .recent_footer {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: rgb(33, 33, 33);
     border-color: rgb(56, 56, 56);
     color:rgb(188, 188, 188); 
@@ -689,17 +689,23 @@ form {
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
     border-width: 0.009rem;
-    
 }
 
 .recent_tag {
-    font-size: 0.6rem;
-    padding: 5px;
+    font-size: 0.7rem;
+    padding: 0.2rem;
     border-style: solid;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     border-width: 0.01rem;
     border-color: rgb(63, 63, 63);
     color:rgb(188, 188, 188);
+}
+.tags_container, .link_container {
+    padding: 0.2rem;
+}
+
+.devicon-github-original:hover{
+    color: white;
 }
 
 /* skills */
