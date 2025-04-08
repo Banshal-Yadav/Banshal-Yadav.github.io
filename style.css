@@ -65,6 +65,10 @@
     background-color: rgb(39, 38, 45);
 }
 
+.material-symbols-outlined {
+    padding-top: 0.5rem; /* to allign sidebar icont withsidebar button*/
+}
+
 .sidebar {
     height: 100%;
     width: fit-content;
