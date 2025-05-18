@@ -869,6 +869,12 @@ form {
     color:rgb(164, 164, 164);
 }
 
+/* png icons */
+.icon {
+    height:2rem ;
+    padding-right: 0.5rem; /** gap between i con and text*/
+}
+
 /* working on */
 .working_on_container {
     background:  var(--medium-bg-grn);
