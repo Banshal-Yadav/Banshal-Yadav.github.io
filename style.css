@@ -82,7 +82,7 @@
 .sidebar-toggle-btn {
     padding: 0.3rem;
     position: fixed;
-    top: 2.5rem;
+    top: 2rem;
     left: 1rem;
     z-index: 4;
     background-color: rgb(29, 28, 34);
@@ -200,6 +200,7 @@
     color: rgb(188, 214, 224);
     display:flex;
     justify-content: center;
+    padding-top: 11%; /* to keep logo below the floating navbar*/
 }
 .banshal_logo_txt{
     background-color: var(--dark-bg);
@@ -209,20 +210,30 @@
     text-shadow: 2px 2px 1px rgb(209, 171, 17);
 }
 
+.float {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
 .nav {
     background-color: var(--dark-bg);
-    padding: 4%;
-    height: fit-content;
+    padding: 2%;
+    height: 1rem;
     font-size: 15px;
     font-weight: 350;
     display:flex;
     justify-content: center;
+    border-style: solid;
+    border-color: var(--accent-amber);
+    border-width: 0rem 0rem 0.1rem 0rem;
 }
 
 .nav_txt_container{
     width: 30rem;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav_txt {
@@ -1006,6 +1017,7 @@ section {
         padding-bottom: 5%;
         padding-left: 10%;
         padding-right: 6%;
+        padding-top: 25%; /* to keep logo below the floating navbar*/
     }
     
     .banner {
@@ -1018,11 +1030,11 @@ section {
     }
    
     .nav {
-        padding: 2.5rem;
-        padding-bottom: 5px;
+        padding: 1.5rem;
     }
     .nav_txt{
         font-size: 16px;
+        align-items: center;
     }
     
     .header_options {
@@ -1131,6 +1143,7 @@ section {
     .logo{
         padding: 2rem;
         font-size: 3.5rem;
+        padding-top: 25%; /* to keep logo below the floating navbar*/
     }
     #suggestion_one, #suggestion_two, #suggestion_three{
         border-width: 0.1rem;
