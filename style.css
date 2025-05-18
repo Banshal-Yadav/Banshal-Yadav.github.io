@@ -210,10 +210,11 @@
     text-shadow: 2px 2px 1px rgb(209, 171, 17);
 }
 
+/* navbar and banner container*/
 .float {
-    position: fixed;
+    position: fixed; /* will stick to top*/
     width: 100vw;
-    z-index: 2;
+    z-index: 2;  /* will apper on top of every element*/
 }
 
 .nav {
@@ -226,14 +227,14 @@
     justify-content: center;
     border-style: solid;
     border-color: var(--accent-amber);
-    border-width: 0rem 0rem 0.1rem 0rem;
+    border-width: 0rem 0rem 0.1rem 0rem; /* bottom thin width*/
 }
 
 .nav_txt_container{
     width: 30rem;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* H-center*/
+    align-items: center;     /* V-center*/
 }
 
 .nav_txt {
