@@ -282,7 +282,7 @@
 /* hr for about_me section */
 .hr{
     padding: 3% 40% 3% 40%;
-    background: var(--medium-bg-grn);
+    background: var(--dark-bg);
 }
 .hr hr {
     border: none;
@@ -310,7 +310,7 @@
 
 /* About me */
 .about_me_sec{
-    background: var(--medium-bg-grn);
+    background: var(--dark-bg);
     padding: 0% 5% 1% 5%;
     display: flex;
     justify-content: center;
