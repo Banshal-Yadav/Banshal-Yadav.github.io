@@ -75,8 +75,6 @@
     backdrop-filter: blur(5px);
 }
 
-
-
 .tag_container{
     padding: 1rem;
 }
@@ -278,74 +276,13 @@
 }
 
 /* SEARCH */
-.search_wrapper {
-    background-color: var(--dark-bg);
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-}
-
-#search_container {
-    padding: 1.5rem;
-    padding-bottom: rem;
-    padding-right: 65px;
-    padding-top: 5%;
-    display: flex;
-    justify-content: center;
-    gap:10px;
-}
-
-form {
-    width: 25rem;
-}
-
-#search_bar {
-    background-color: rgba(39, 38, 38, 0.34);
-    backdrop-filter: blur(5px);
-    border-style: solid;
-    border-color: var(--border-color);
-    border-width: 0.1rem;
-    padding-left: 10px;
-    height: 3rem;  
-    width: 100%;
-    outline: none;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem; 
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem; 
-    transition-duration: 0.3s ;
-    color: rgb(162, 160, 153);
-}
-
-#search_bar::placeholder {
-    color: rgb(126, 125, 125);
-}
-
-#search_bar:hover {
-    border-color: white;
-    width: 102%;
-    /* shadow */
-    box-shadow: 0 0 35px rgb(90, 103, 58); /* added shadow */
-    border-color: white;
-    width: 102%;
-}
-
-#search_btn{
-    background-color: transparent; /* rgb(50, 49, 46) */
-    margin-left: -4.3rem;
-    border-style: solid;
-    border-color: transparent;
-    font-size: 20px;
-    color: rgb(74, 74, 74);
-    z-index: 1;
-}
 
 /* search suggetions */
 .search_suggetion_container{
     background-color: var(--dark-bg);
     padding: 1% 0% 3% 0%;
     height: fit-content;
-    display:flex; /* to make suggestion buttons in the middle*/
+    display:flex; 
     justify-content: center;
     border-style: solid;
     border-color: var(--border-color);
@@ -357,7 +294,7 @@ form {
 .search_suggetions{
     width: fit-content;
     color: rgb(172, 178, 94);
-    display:flex; /* to add gap between suggestions*/
+    display:flex; 
     gap: 1rem;
 }
 #suggestion_one, #suggestion_two, #suggestion_three{
@@ -512,13 +449,14 @@ form {
 }
 
 .new_note {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     opacity: 1;
     margin-left: 20px;
     margin-right:2%;
-    height: 30px;
+    height: fit-content;
     max-width: 100%;
+    padding: 1rem;
     font-size: large;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -1106,7 +1044,7 @@ section {
     }
 
     .recent_card_container {
-    min-width: 150px;
+    min-width: 60%;
     max-width: 200px;
     }
     
