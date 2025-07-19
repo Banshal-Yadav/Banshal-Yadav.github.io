@@ -235,6 +235,13 @@
     box-shadow: none;
 }
 
+/* voyage one img */
+.voyager_one {
+    width: 35rem;
+    background-color: transparent;
+    position:absolute;
+    z-index: 1;
+}
 
 /* About me */
 .about_me_sec{
@@ -766,6 +773,10 @@ section {
 
 /* medium screen */
 @media (min-width: 600px) and (max-width: 900px) {
+
+    .voyager_one {
+    width: 0rem;
+    }
     .recent_card_container {
     min-width: 400px;
     max-width: 500px;
@@ -801,12 +812,19 @@ section {
     }
 }
 
+
+
 /* mobile display */
 /* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
     /* .up_btn {
         margin: 85% 0% 0% 80%;
     } */
+
+    .voyager_one {
+    width: 0rem;
+    }
+
     .about_me_sec {
         padding: 5%;
         padding-top: 0%;
@@ -979,6 +997,10 @@ section {
 }
 
 @media (max-width: 399px) {
+
+     .voyager_one {
+    width: 0rem;
+    }
 
     .banner{
         font-size: 0.64rem;
