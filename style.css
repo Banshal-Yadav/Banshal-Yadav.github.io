@@ -294,8 +294,8 @@
     border-style: solid;
     border-color: var(--border-color);
     border-width: 0.1rem;
-    border-bottom-right-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
     border-top:none;
 }
 .search_suggetions{
