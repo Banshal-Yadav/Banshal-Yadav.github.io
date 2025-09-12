@@ -1,38 +1,24 @@
-/* * {
-    margin:0;
-    padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
-
-/* for gradient on txt */
-/* .element {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
 
 * {
     margin:0;
     padding: 0;
     font-family: 'VT323', monospace;
-    text-shadow: 0 0 2px rgb(209, 171, 17); /*  experimental background glow*/
+    text-shadow: 0 0 2px rgb(209, 171, 17); 
 }
 
 :root {
     /* Primary Colors */
-    --dark-bg: rgb(17, 16, 22);         /* main background  --dark-bg: rgb(17, 16, 22);   */
-    --medium-bg: rgb(29, 28, 34);       /* secondary/card backgrounds */
+    --dark-bg: rgb(17, 16, 22);         
+    --medium-bg: rgb(29, 28, 34);       
     --medium-bg-grn: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
-    --border-color: rgb(50, 49, 46);    /* border elements */
-    --text-primary: rgb(162, 160, 153); /* main text color */
-    --text-accent: rgb(188, 175, 110);  /* accent text for headings */
+    --border-color: rgb(50, 49, 46);    
+    --text-primary: rgb(162, 160, 153); 
+    --text-accent: rgb(188, 175, 110);  
     
     /* Accent Colors */
-    --accent-teal: rgb(108, 162, 136);  /* sidebar & UI accents */
-    --accent-amber: rgb(183, 107, 76);  /* link colors */
-    --accent-olive: rgb(153, 154, 98);  /* highlights and UI elements */
+    --accent-teal: rgb(108, 162, 136);  
+    --accent-amber: rgb(183, 107, 76); 
+    --accent-olive: rgb(153, 154, 98);  
     
     /* Gradients */
     --card-gradient: linear-gradient(45deg, var(--medium-bg), rgb(25, 24, 30));
@@ -41,9 +27,9 @@
     --gradient-hover: linear-gradient(45deg, rgb(206, 134, 134), rgb(106, 125, 169), rgb(194, 90, 83));
     
     /* Effects */
-    --text-glow: rgb(209, 171, 17);     /* text shadow color */
-    --overlay-bg: rgba(29, 28, 34, 0.7); /* semi-transparent overlays */
-    --card-shadow: rgba(12, 12, 10, 0.5); /* shadow effects */
+    --text-glow: rgb(209, 171, 17);     
+    --overlay-bg: rgba(29, 28, 34, 0.7); 
+    --card-shadow: rgba(12, 12, 10, 0.5); 
   }
 
 
@@ -64,16 +50,7 @@
     z-index: 10; /* to make it top layer*/
 }
 
-.banner {
-    height: 10px;
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    padding: 5px;
-    color: rgb(124, 180, 201);
-    background-color:  var(--dark-bg);
-    backdrop-filter: blur(5px);
-}
+
 
 .tag_container{
     padding: 1rem;
@@ -104,18 +81,14 @@
 }
 
 .logo {
-    background: linear-gradient(45deg,rgb(195, 36, 36),wheat, rgb(49, 130, 144) , rgb(26, 2, 83));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,rgb(12, 12, 12),wheat, rgb(49, 130, 144) , rgb(26, 2, 83));
     
-    font-size: 6rem;
-    
+    font-size: 8rem;
     font-weight: 600;
-    color: rgb(188, 214, 224);
+    color: rgb(245, 244, 228);
     display:flex;
     justify-content: center;
-    padding-top: 11%; /* to keep logo below the floating navbar*/
+    padding-top: 18%; /* to keep logo below the floating navbar*/
 }
 .banshal_logo_txt{
     background-color: var(--dark-bg);
@@ -125,7 +98,7 @@
     text-shadow: 2px 2px 1px rgb(209, 171, 17);
 }
 
-/* navbar and banner container*/
+/* navbar container*/
 .float {
     position: fixed; /* will stick to top*/
     width: 100vw;
@@ -134,16 +107,10 @@
 
 .nav {
     background-color: var(--dark-bg);
-    padding: 2%;
+    padding: 2% 0 1% 0;
     height: 1rem;
-    backdrop-filter: blur(5px);
-    font-size: 15px;
-    font-weight: 350;
     display:flex;
     justify-content: center;
-    border-style: solid;
-    border-color: var(--border-color);
-    border-width: 0rem 0rem 0.1rem 0rem; /* bottom thin width*/
 }
 
 .nav_txt_container{
@@ -159,7 +126,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1%;
-    font-size: 18px;;
+    font-size: 30px;;
     color: white;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -286,21 +253,20 @@
     color:rgba(163, 177, 122, 0.983);
 }
 
-/* SEARCH */
 
-/* search suggetions */
+/* shortcut suggetions */
 .search_suggetion_container{
     background-color: var(--dark-bg);
-    padding: 1% 0% 3% 0%;
+    padding: 0% 0% 0.5% 0%;
     height: fit-content;
     display:flex; 
     justify-content: center;
     border-style: solid;
     border-color: var(--border-color);
-    border-width: 0.1rem;
+    border-width: 1px;
     border-bottom-right-radius: 0rem;
     border-bottom-left-radius: 0rem;
-    border-top:none;
+    border-top: none;
 }
 .search_suggetions{
     width: fit-content;
@@ -309,16 +275,15 @@
     gap: 1rem;
 }
 #suggestion_one, #suggestion_two, #suggestion_three{
-    background-color: rgba(39, 38, 38, 0.34);
-  backdrop-filter: blur(5px);
+    font-size: 18px;
+    background-color: transparent;
     border-style: solid;
-    border-color: var(--border-color);
-    border-width: 0.1rem;
+    border-color: transparent;
     height: fit-content;
-    padding:1rem;
-    border-radius: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
     color: rgb(162, 160, 153);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 #suggestion_one:hover, #suggestion_two:hover, #suggestion_three:hover{
    border-color: rgb(159, 116, 16);
@@ -326,29 +291,7 @@
 }
 
 .suggestion_link{
-    font-size: 1rem;
     color:gray;
-}
-
-/* cards */
-.card_sec_heading {
-    background-image: repeating-linear-gradient(45deg, rgb(32, 31, 31), rgb(28, 28, 28));
-    padding: 1rem 40% 1rem 19%; /* top, right  , bottom, left */
-    
-}
-.notes_txt_gradient {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    z-index: 2; /* to keep gradient on top if any overlayer */
-    font-size: 45px;
-    font-weight: 600;
-}
-.notes_link {
-    color: var(--accent-amber);
-    font-size: 1.1rem;
 }
 
 /* background of the card wrapper */
@@ -639,11 +582,11 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     color: lightgray;
     font-size: 50px;
     font-weight: 300;
     padding: 3rem;
+    text-align: center;
 }
 .skill_li_head{
     height: 2.5rem;
@@ -733,6 +676,7 @@
     font-weight: 300;
     padding-left: 0rem;
     padding-top: 1.5rem;
+    text-align: center;
 }
 
 .working_on_info {
@@ -804,9 +748,6 @@ section {
         width: 100%;
         margin: 0;
     }
-    #search_btn {
-        height: 2.9rem;
-     }
      .skills_container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -885,14 +826,7 @@ section {
         padding-top: 25%; /* to keep logo below the floating navbar*/
     }
     
-    .banner {
-        padding: 10px;
-        font-size: 0.7rem;
-        font-weight: 100;
-        height: 10px;
-        color: rgb(192, 195, 155);
-        background-color:  rgb(17, 16, 22);
-    }
+
    
     .nav {
         padding: 1.5rem;
@@ -905,28 +839,6 @@ section {
     .header_options {
         font-size: 18px;
     }
-    #search_container{
-        padding-right: 35px;
-    }
-    #search_btn {
-        padding: 15px;
-    }
-    #search_btn{
-        background-color: transparent;
-        border-style: solid;
-        border-color: transparent;
-        margin-top: -0.35rem;
-        font-size: 20px;
-        color: rgb(74, 74, 74);
-        z-index: 10;
-    }
-
-    #search_bar {
-        width: 90%;
-     }
-    #search_bar:hover {
-        width: 100%;
-    }
     .search_suggetion_container{
         padding-bottom: 2.5rem;
     }
@@ -934,21 +846,6 @@ section {
         border-width: 0.1rem;
         height: fit-content;
         padding: 0.7rem;
-    }
-    .card_sec_heading {
-        background: var(--card-gradient);
-        font-size: 30px;
-        font-weight: 300;
-        padding: 0.5rem 3rem 0rem 3rem;
-    }
-    .notes_txt_gradient {
-        font-size: 2rem;
-        font-weight: 600;
-
-    }
-    .all_notes {
-        font-size: 18px;
-        padding: 3%;
     }
 
     /* skills section */
@@ -1000,17 +897,15 @@ section {
 }
 
 @media (max-width: 399px) {
-
-     .voyager_one {
-    width: 0rem;
+    .nav_txt {
+    font-size: 20px;
     }
-
-    .banner{
-        font-size: 0.64rem;
+    .voyager_one {
+    width: 0rem;
     }
     .logo{
         padding: 2rem;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding-top: 25%; /* to keep logo below the floating navbar*/
     }
     #suggestion_one, #suggestion_two, #suggestion_three{

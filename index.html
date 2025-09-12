@@ -36,11 +36,8 @@
      <!-- up button -->
      <div class="up_btn"><a href="#top"><i class="fa fa-arrow-up" id="up_btn_icon"></i></a></div>
 
-      <!-- navbar and banner container, will stick to top while scrolling -->
+      <!-- navbar container, will stick to top while scrolling -->
       <div class="float">
-        <div class="banner">
-            <h3> This site is a work in progress. Please check back later for updates.</h3>
-        </div>
       
           <div class="header">
             <nav class="nav">
@@ -51,9 +48,17 @@
                   <a class="nav_txt" href="" >|</a>
                   <a class="nav_txt" href="https://x.com/Banshal_Yadav" >Twitter</a>
                   </b>
-            </nav>           
-              <div class="header_main"> 
-              </div>
+            </nav>        
+            
+            <!-- shortcuts -->
+            <div class="search_suggetion_container">
+              <div class="search_suggetions">
+               <span id="suggestion_two"><a class="suggestion_link" href="#skills">skills</a></span>
+               <span id="suggestion_two"><a class="suggestion_link" href="#working_on">projects</a></span>
+               <span id="suggestion_two">resourses</span>
+             </div>
+           </div>
+              
             </div> 
           </div> 
 
@@ -62,7 +67,6 @@
 
           <!-- logo text -->
            <h2 class="banshal_logo_txt"> <div class="logo"><small id="logo_txt">hello, <br>I'm  Banshal Yadav</div></h2>
-          
 
              <!-- About me section -->
             <div class="hr"><hr></div>
@@ -81,117 +85,18 @@
                     <p class="about_me_para">> I like tinkering with local LLMs using tools like Ollama.</p>
                     <p class="about_me_para">> Outside the screen, you’ll find me deep in games like <em class="game">Hollow Knight</em> and <em class="game">Rain World</em>.</p>  
                     <p class="about_me_para">> Fueled by chai, curiosity, and the occasional existential crisis.</p>  
-                    <p class="about_me_para">> Stick around to see what I’m building (or breaking) next.</p>    
-                                          
+                    <p class="about_me_para">> Stick around to see what I’m building (or breaking) next.</p>                             
                     </article>
                   </section>
               </div>
-            </div>
-    
-            <div class="hr"><hr></div>
-             
+            </div> 
     </header>
 
     <main>
 
      <div class="section_card">
 
-      <div class="search_suggetion_container">
-        <div class="search_suggetions">
-          <span id="suggestion_two"><a class="suggestion_link" href="#skills">skills</a></span>
-          <span id="suggestion_two"><a class="suggestion_link" href="#working_on">projects</a></span>
-          <span id="suggestion_two">resourses</span>
-        </div>
-      </div>
-
-      <!-- <h2 class="card_sec_heading"><span class="notes_txt_gradient">Notes and recents </span></h2>
-        <div class="card_container">
-               <span class="card_wrapper">
-                 <div class="new_note">
-                  <span id="suggestion_one"><a class="suggestion_link" href="public\note.html">notes</a></span>
-                 </div>
-
-                 -- notes card container --
-                <span class="card">
-                   <span id="card01" class="card_style">
-                    <div class="card_header"><span class="card_heading">Deep learning basics<a class="notes_link" href="public\note.html"> read</a></span></div>
-                     <div class="card_content">
-                     </div>
-                     <div class="card_footer">
-                      <nav class="card_footer_nav">
-                        <a href="" class="card_nav_footer" id="date">23 Mar |</a>
-                        <a href="" class="card_nav_footer" id="time">2:35 PM |</a>
-                        <a href="" class="card_nav_footer" id="activity">new</a>
-                      </nav>
-                     </div>
-                   </span>
-
-                   <span id="card02" class="card_style">
-                    <div class="card_header"><span class="card_heading">All about NLP <a class="notes_link" href="public\note.html"> read</a></span></div>
-                    <div class="card_content">
-                     </div>
-                     <div class="card_footer">
-                      <nav class="card_footer_nav">
-                        <a href="" class="card_nav_footer" id="date">15 Mar |</a>
-                        <a href="" class="card_nav_footer" id="time">1:35 PM |</a>
-                        <a href="" class="card_nav_footer" id="activity">new</a>
-                      </nav>
-                     </div>
-                   </span>
-                   <span id="card03" class="card_style">
-                    <div class="card_header"><span class="card_heading">Low-level programming<a class="notes_link" href="public\note.html"> read</a></span></div>
-                    <div class="card_content">       
-                     </div>
-                     <div class="card_footer">
-                      <nav class="card_footer_nav">
-                        <a href="" class="card_nav_footer" id="date">10 Mar |</a>
-                        <a href="" class="card_nav_footer" id="time">4:45 PM |</a>
-                        <a href="" class="card_nav_footer" id="activity">active</a>
-                      </nav>
-                     </div>
-                   </span>
-
-                   <span id="card04" class="card_style">
-                    <div class="card_header"><span class="card_heading">Dijkstra's algorithm <a class="notes_link" href="public\note.html"> read</a></span></div>
-                    <div class="card_content">
-                     </div>
-                     <div class="card_footer">
-                      <nav class="card_footer_nav">
-                        <a href="" class="card_nav_footer" id="date">03 Mar |</a>
-                        <a href="" class="card_nav_footer" id="time">6:15 PM |</a>
-                        <a href="" class="card_nav_footer" id="activity">done</a>
-                      </nav>
-                     </div>
-                   </span>
-
-                   <span id="card05" class="card_style">
-                    <div class="card_content">
-                        <span class="card_heading">Quick Sort Algorithm <a class="notes_link" href="public\note.html"> read</a></span>
-                     </div>
-                     <div class="card_footer">
-                      <nav class="card_footer_nav">
-                        <a href="" class="card_nav_footer" id="date">03 Mar |</a>
-                        <a href="" class="card_nav_footer" id="time">6:15 PM |</a>
-                        <a href="" class="card_nav_footer" id="activity">done</a>
-                      </nav>
-                     </div>
-                   </span>
-
-                   <span id="card06" class="card_style">
-                      <div class="card_content">
-                         <span class="card_heading">Merg Sort Algorithm <a class="notes_link" href="public\note.html"> read</a></span>
-                      </div>
-                      <div class="card_footer">
-                        <nav class="card_footer_nav">
-                          <a href="" class="card_nav_footer" id="date">25 Feb |</a>
-                          <a href="" class="card_nav_footer" id="time">4:15 PM |</a>
-                          <a href="" class="card_nav_footer" id="activity">done</a>
-                        </nav>
-                       </div>
-                    </span>
-                 </span>
-            </span>
-            </div>    -->
+      
         </div> 
 
         <div class="section_skils" id="skills">
@@ -323,6 +228,7 @@
         <div class="contact_details"> <i class="fa fa-phone"></i> ----</div>
         <div class="contact_details"> <i class="fa fa-map"></i> Bengaluru, India</div>
       </div>
+      <div class="hr" style="padding: 0 30% 0 30%;"><hr></div>
       <div class="copyright">
          <p>&copy; 2025 All rights reserved.</p>
       </div>
