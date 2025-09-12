@@ -573,8 +573,8 @@
     background-color:  var(--dark-bg);
     border-style: solid;
     border-color: var(--dark-bg);
-    border-width: 0.0605rem 0rem 0rem 0rem;
-    padding: 0 15% 0 15%;
+    border-width: 0.5rem 0rem 0rem 0rem;
+    padding: 0 20% 0 20%;
 }
 
 .skills_header {
@@ -598,7 +598,7 @@
 .skills_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     color: gray;
     padding: 4rem;
     padding-top: 0.2rem;
@@ -606,9 +606,11 @@
 .skill-list-body {
     display: grid;
     grid-template-columns: repeat(2, 0.4fr);
-    
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
     font-size: 1rem;
 }
 
