@@ -454,26 +454,31 @@
     border-bottom-right-radius: 8px;
 }
 
-.option_container select {
+.option_container {
     display: none;
 }
 
 
 /* recents */
+
+.recents {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5rem;
+}
 .recents_container{
     background: var(--medium-bg-grn);
     display: flex;
     justify-content: center;
-    padding-bottom: 0rem;
+    padding: 1rem 0 5rem  0rem;
 }
 
 .recent_card_container {
-    margin: 5rem;
     padding: 1rem;
     flex-shrink: 0;
     height: fit-content;
-    min-width: 600px;
-    max-width: 600px;
+    min-width: 350px;
+    max-width: 450px;
     flex-shrink: 0;
     background: var(--card-gradient);
     border-style: solid;
@@ -757,6 +762,16 @@ section {
         color: gray;
         padding: 1% 1% 10% 1%;
     }
+    .recents {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 2rem;
+    }
+
+    .recent_card_container {
+    min-width: 230px;
+    max-width: 400px;
+    }
 }
 
 
@@ -814,22 +829,8 @@ section {
     }
 
     .logo {
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-
         font-size: 4.5rem;
-        font-weight: 600;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 10%;
-        padding-right: 6%;
-        padding-top: 25%; /* to keep logo below the floating navbar*/
     }
-    
-
-   
     .nav {
         padding: 1.5rem;
     }
@@ -895,6 +896,17 @@ section {
     }
     .working_on_info {
         padding: 10% 5% 1% 15%; 
+    }
+
+    .recents {
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    gap: 5rem;
+    }
+
+    .recent_card_container {
+    min-width: 350px;
+    max-width: 400px;
     }
 }
 
@@ -965,9 +977,15 @@ section {
         padding: 0 5% 0 5%;
     }
 
+    .recents {
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    gap: 5rem;
+    }
+
     .recent_card_container {
-    min-width: 60%;
-    max-width: 200px;
+    min-width: 250px;
+    max-width: 300px;
     }
     
 }
