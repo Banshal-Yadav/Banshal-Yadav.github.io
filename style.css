@@ -968,13 +968,13 @@ section {
 
     .skill-list-body {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 0.5fr);
         gap: 0.5rem;
-        padding: 0 5% 0 5%;
+        padding: 2rem 1rem 2rem 1.5rem;
     }
 
     .section_skils {
-        padding: 0 5% 0 5%;
+        padding: 0 1% 0 1%;
     }
 
     .recents {
