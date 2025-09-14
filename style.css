@@ -259,17 +259,17 @@
 .live-status {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1.5rem;
 }
 
 .right-now , .essential {
     border: 3px solid var(--border-color);
     border-radius: 8px;
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 1rem 1.5rem ;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .status-item a {
@@ -277,6 +277,7 @@
     color: gray;
     text-decoration: none;
     background-color: rgb(24, 24, 24);
+    padding: 2px;
 }
 .status-item a:hover {
     background-color: rgb(40, 40, 40);
@@ -286,7 +287,7 @@
     font-size: 18px;
     color: var(--accent-teal);
     top: 30rem;
-    padding: 0.5rem;
+    padding: 2px 8px;
     font-family: monospace;
 }
 
@@ -782,7 +783,7 @@ section {
     .right-now, .essential {
         width: fit-content;
     }
-    
+
     .recent_card_container {
     min-width: 400px;
     max-width: 500px;
