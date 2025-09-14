@@ -82,9 +82,9 @@
 
 .logo {
     background: linear-gradient(45deg,rgb(12, 12, 12),wheat, rgb(49, 130, 144) , rgb(26, 2, 83));
-    
     font-size: 8rem;
     font-weight: 600;
+    border-radius: 1rem;
     color: rgb(245, 244, 228);
     display:flex;
     justify-content: center;
@@ -204,12 +204,12 @@
 
 /* voyage one img */
 .voyager_one {
-    width: 20rem;
+    width: 25rem;
     height: 15rem;
     background-color: transparent;
     position:absolute;
     top: 10rem;
-    left: 1rem;
+    left: 2rem;
     z-index: 1;
 }
 
@@ -226,7 +226,7 @@
     display:flex;
     justify-content:center;
     width: fit-content;
-    background-color: var(--dark-bg);
+    background-color: var(--medium-bg);
     border-radius: 0.5rem;
     border-style: solid;
     border-width: 0.1rem;
@@ -244,6 +244,7 @@
 .about_me_para{
     padding: 0.4rem;
     color: rgb(188, 185, 43);
+    font-size: 18px;
 }
 .game{
     color: rgb(160, 178, 57);
