@@ -118,6 +118,7 @@
     display:flex;
     justify-content: center; /* H-center*/
     align-items: center;     /* V-center*/
+    gap: 8px;
 }
 
 .nav_txt {
@@ -125,19 +126,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 1%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0.5% 1.5%;
     font-size: 30px;;
     color: white;
     text-decoration: none;
     transition-duration: 0.5s;
 }
 .nav_txt:hover {
-    background: var(--gradient-hover);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     padding: 1%;
-    font-size: 19px;;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 }
