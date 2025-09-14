@@ -88,7 +88,7 @@
     color: rgb(245, 244, 228);
     display:flex;
     justify-content: center;
-    padding-top: 10%; /* to keep logo below the floating navbar*/
+     padding: 10% 0 0% 0; /* to keep logo below the floating navbar*/
 }
 .banshal_logo_txt{
     background-color: var(--dark-bg);
@@ -217,7 +217,7 @@
 /* About me */
 .about_me_sec{
     background: var(--dark-bg);
-    padding: 0% 5% 1% 5%;
+    padding: 0% 5% 8% 5%;
     display: flex;
     justify-content: center;
 }
@@ -577,10 +577,8 @@
 /* skills */
 .section_skils{
     background-color:  var(--dark-bg);
-    border-style: solid;
-    border-color: var(--dark-bg);
-    border-width: 0.5rem 0rem 0rem 0rem;
-    padding: 0 20% 0 20%;
+    border-top: 1px solid var(--border-color);
+    padding: 0% 20% 0% 20%;
 }
 
 .skills_header {
@@ -591,7 +589,7 @@
     color: lightgray;
     font-size: 50px;
     font-weight: 300;
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     text-align: center;
 }
 .skill_li_head{
