@@ -88,7 +88,7 @@
     color: rgb(245, 244, 228);
     display:flex;
     justify-content: center;
-    padding-top: 18%; /* to keep logo below the floating navbar*/
+    padding-top: 10%; /* to keep logo below the floating navbar*/
 }
 .banshal_logo_txt{
     background-color: var(--dark-bg);
@@ -96,6 +96,7 @@
 #logo_txt {
     font-family: 'VT323', monospace;
     text-shadow: 2px 2px 1px rgb(209, 171, 17);
+    padding: 1% 0% 2% 0%;
 }
 
 /* navbar container*/
