@@ -217,9 +217,10 @@
 /* About me */
 .about_me_sec{
     background: var(--dark-bg);
-    padding: 0% 5% 8% 5%;
+    padding: 0% 0% 4% 0%;
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 .about_me_container{
     padding: 1rem;
@@ -252,6 +253,41 @@
 }
 .game:hover{
     color:rgba(163, 177, 122, 0.983);
+}
+
+/* live-status */
+.live-status {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.right-now , .essential {
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.status-item a {
+    font-size: medium;
+    color: gray;
+    text-decoration: none;
+    background-color: rgb(24, 24, 24);
+}
+.status-item a:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.status-title {
+    font-size: 18px;
+    color: var(--accent-teal);
+    top: 30rem;
+    padding: 0.5rem;
+    font-family: monospace;
 }
 
 
@@ -730,6 +766,23 @@ section {
     .voyager_one {
     width: 0rem;
     }
+
+    .about_me_sec {
+        padding: 5%;
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .live-status {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .right-now, .essential {
+        width: fit-content;
+    }
+    
     .recent_card_container {
     min-width: 400px;
     max-width: 500px;
@@ -788,7 +841,19 @@ section {
     .about_me_sec {
         padding: 5%;
         padding-top: 0%;
+        display: flex;
+        flex-direction: column;
     }
+    .live-status {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-now, .essential {
+        width: fit-content;
+    }
+
     .about_me_container{
         padding: 10% 10% 10% 10%;
     }
@@ -925,6 +990,14 @@ section {
         height: fit-content;
         padding: 0.5rem;
     }
+
+    .about_me_sec {
+        padding: 5%;
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .card_wrapper {
         padding: 0.5rem;
         height: 25rem; /* fix height for mobile devices */
