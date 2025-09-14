@@ -467,7 +467,7 @@
     gap: 5rem;
 }
 .recents_container{
-    background: var(--medium-bg-grn);
+    background: var(--dark-bg);
     display: flex;
     justify-content: center;
     padding: 1rem 0 5rem  0rem;
@@ -666,10 +666,8 @@
 
 /* working on */
 .working_on_container {
-    background:  var(--medium-bg-grn);
-    border-style: solid;
-    border-color: var(--dark-bg);
-    border-width: 0.1rem 0rem 0rem 0rem; 
+    background:  var(--dark-bg);
+    border-top: 1px  solid var(--border-color);
     height:auto;
     padding: 2% 15% 2% 20%;
 }
@@ -696,6 +694,7 @@
 
 /* footer */
 footer {
+    border-top: 1px solid var(--accent-olive);
     height:  auto;
     background: var(--dark-bg);
 }
