@@ -52,32 +52,11 @@
 
 
 
-.tag_container{
-    padding: 1rem;
-}
-
-.tags {
-    background-color: rgb(105, 135, 149);
-    border-radius: 0.7rem;
-    padding: 0.3rem;
-}
-
 .header {
     height: fit-content;
     width: 100%;
     /* background-image: repeating-linear-gradient(45deg,rgb(34, 33, 33),rgb(19, 19, 146), rgb(65, 60, 60), rgb(28, 28, 28)) ;   */
     background-color: var(--dark-bg) ; 
-}
-
-.header_main {
-    height: fit-content;
-    width:100%;
-    font-size: 40px;
-    /* background-image: linear-gradient(45deg, rgb(198, 235, 97), rgb(76, 117, 150)); */
-    display:flex;
-    justify-content: center;
-    background-color:  var(--dark-bg);
-    
 }
 
 .logo {
@@ -142,12 +121,6 @@
     text-decoration: none;
 }
 
-.header_options:hover {
-    /* box-shadow: rgb(39, 38, 38)  0px 10px 40px; */
-    transform: translateY(-3px);
-}
-
-
 .up_btn {
     z-index: 5;
     position: fixed;
@@ -188,20 +161,6 @@
     box-shadow: none;
 }
 
-/* primary hr */
-.primary_hr{
-    padding: 1% 30% 1% 30%;
-    background: var(--dark-bg);
-}
-.primary_hr hr {
-    border: none;
-    border-top: 0.15rem solid rgb(121, 140, 73);
-    background: none;
-    height: 0;
-    margin: 0;
-    box-shadow: none;
-}
-
 /* voyage one img */
 .voyager_one {
     width: 25rem;
@@ -217,7 +176,7 @@
 /* About me */
 .about_me_sec{
     background: var(--dark-bg);
-    padding: 0% 0% 4% 0%;
+    padding: 0% 0% 0% 0%;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -290,6 +249,7 @@
     padding: 2px 8px;
     font-family: monospace;
 }
+
 
 
 /* shortcut suggetions */
@@ -490,202 +450,43 @@
 }
 
 
-/* recents */
-
-.recents {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    gap: 5rem;
-}
-.recents_container{
-    background: var(--dark-bg);
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0 5rem  0rem;
-}
-
-.recent_card_container {
-    padding: 1rem;
-    flex-shrink: 0;
-    height: fit-content;
-    min-width: 350px;
-    max-width: 450px;
-    flex-shrink: 0;
-    background: var(--card-gradient);
-    border-style: solid;
-    border-radius: 0.5rem;
-    border-width: 1px;
-    border-color: rgb(68, 68, 68);
-}
-
-.recent_header {
-    background-color: var(--medium-bg);
-    padding: 1rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0;
-}
-.project_desc {
-    font-size: 0.9rem;
-    box-sizing: border-box; /* include padding in width calculation*/
-    word-wrap: break-word;
-    padding: 0.5rem;
-    color: var(--text-primary);
-    line-height: 1;
-}
-
-.recents_heading {
-    color:rgb(188, 188, 188); /* heading text color*/
-    font-size: 20px;
-    padding:0px 0.5rem 0px 0.5rem ;
-}
-
-/* scroll-bar styles */
-.recents::-webkit-scrollbar {
-    width: 8px;  
-}
-
-
-.recent_card_body {
-    display: flex;
-    justify-content: center;
-    padding: 0.3rem;
-    overflow: hidden;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    background-color: var(--medium-bg);
-    transition-duration: 0.4s;
-}
-.recent_card_body img {
-    border-radius: 0.4rem;
-    width: 100%;
-    height: 100%;
-    display: block; /* remove any extra space*/
-    object-fit: contain; /* make image fit the area without distortion*/
-}
-
-.recent_card_body:hover {
-    transform: scale(1.05) translateY(-1rem);
-    border-style: solid;
-    border-radius: 0.5rem;
-    border-width: 0.1rem;
-    border-color: rgb(112, 111, 111);
-}
-
-.recent_txt {
-    color: lightgray
-}
-
-.recent_footer {
-    padding: 0.5rem;
-    background-color: var(--medium-bg);
-    border-color: rgb(56, 56, 56);
-    color:rgb(188, 188, 188); 
-    font-size: 20px;;
-    border-style: solid;
-    border-bottom-left-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-    border-width: 0.009rem;
-}
-
-.recent_tag {
-    font-size: 0.7rem;
-    padding: 0.2rem;
-    border-style: solid;
-    border-radius: 0.3rem;
-    border-width: 0.01rem;
-    border-color: rgb(63, 63, 63);
-    color:rgb(188, 188, 188);
-}
-.tags_container, .link_container {
-    padding: 0.2rem;
-}
-
-.devicon-github-original:hover{
-    color: white;
-}
-
 /* skills */
 .section_skils{
     background-color:  var(--dark-bg);
-    border-top: 1px solid var(--border-color);
-    padding: 0% 20% 0% 20%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 5% 19% 5% 19%;
 }
 
-.skills_header {
-    background: var(--gradient-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: lightgray;
-    font-size: 50px;
-    font-weight: 300;
-    padding: 2rem 3rem 3rem 3rem;
-    text-align: center;
-}
-.skill_li_head{
-    height: 2.5rem;
-    color: var(--accent-olive);
-    font-size: 1.5rem;
-    font-weight: 200;
+/* skills content */
+.status-title-skills {
+    font-size: 28px;
+    color: var(--accent-teal);
+    top: 30rem;
+    padding: 2px 8px;
+    font-family: monospace;
+    width: fit-content;
 }
 
-.skills_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    color: gray;
-    padding: 4rem;
-    padding-top: 0.2rem;
-}
-.skill-list-body {
-    display: grid;
-    grid-template-columns: repeat(2, 0.4fr);
-    justify-content: center;
-    border: 1px solid var(--border-color);
+.skills {
+    border: 3px solid var(--border-color);
     border-radius: 8px;
-    gap: 1rem;
-    padding: 2rem 1rem 2rem 1rem;
-    font-size: 1rem;
-}
-
-.skill_list {
+    padding: 1rem 1.5rem ;
     display: flex;
-    justify-content:left;
-    align-items: center; /* keep vertically center*/
-    outline-style:solid;
-    outline-width: 0.3px;
-    outline-color: rgb(50, 50, 50) ;
-    padding: 0.5rem;
-    height: 3rem;
-    width: 8.5rem;
-    box-sizing: border-box;
-    padding-left: 1rem;
-    font-size: large;
-    background-color:var(--medium-bg);  /* rgb(240, 128, 12); */
-    /* border radius */
-    border-radius: 0.2rem;
-    transition-duration: 0.2s;
-}
-.skill_list:hover {
-    transform: scale(1.1);
-    color: rgb(158, 158, 65);
-}
-.devicon {
-    font-size: 2rem; 
-    margin-right: 0.7rem; /* Space between icon and text (mr-2) */
-    color: #d1d5db; 
-    transition-duration: 0.2s;
-}
-.devicon:hover{
-    color: tomato; 
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
 }
 
-.link {
-  color:gray;
+.status-title-skills-subtitle {
+    font-size: 16px;
+    color: var(--accent-teal);
+    top: 30rem;
+    padding: 2px 8px;
+    font-family: monospace;
+    width: fit-content;
 }
-.link:hover {
-    color:rgb(164, 164, 164);
-}
+
 
 /* png icons */
 .icon {
@@ -777,57 +578,11 @@ section {
         width: fit-content;
     }
     
-
-    .recent_card_container {
-    min-width: 400px;
-    max-width: 500px;
-    }
-
-    .card_container {
-        padding: 3% 3% 1% 3%;
-        justify-content: center;
-        display: grid;
-        grid-template-rows: auto auto;
-    }
-    .card {
-        padding: 20px;
-        padding-top: 0.1rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-    .card_style {
-        max-width: 200px;
-        width: 100%;
-        margin: 0;
-    }
-     .skills_container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-        color: gray;
-        padding: 1% 1% 10% 1%;
-    }
-    .recents {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    gap: 2rem;
-    }
-
-    .recent_card_container {
-    min-width: 230px;
-    max-width: 400px;
-    }
 }
-
-
 
 /* mobile display */
 /* 400px to 599 mobile view*/
 @media (min-width: 400px) and (max-width: 599px){
-    /* .up_btn {
-        margin: 85% 0% 0% 80%;
-    } */
 
     .voyager_one {
     width: 0rem;
@@ -852,39 +607,6 @@ section {
     .about_me_container{
         padding: 10% 10% 10% 10%;
     }
-    .card_wrapper {
-        padding: 0.5rem;
-        height: 25rem; /* fix height for mobile devices */
-    }
-    
-    .card_container {
-        padding: 3% 3% 1% 3%;
-        justify-content: center;
-        display: grid;
-        grid-template-rows: auto auto;
-        /* gap: 1rem; */
-    }
-
-    .card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 15px;
-        padding-top:5px;
-
-        height: 90%;  /* to fit card within card_wrapper height bounds */
-        overflow-y: scroll; /* add scroll-bar*/
-        overflow-x: hidden; /* hide horizontal scrollbar */
-    }
-
-    .card_style {
-        min-width: 0;
-        width: 100%;
-    }
-    .recent_card_container {
-    min-width: 200px;
-    max-width: 300px;
-    }
 
     .logo {
         font-size: 4.5rem;
@@ -897,13 +619,10 @@ section {
         align-items: center;
     }
     
-    .header_options {
-        font-size: 18px;
-    }
     .search_suggetion_container{
         padding-bottom: 2.5rem;
     }
-    #suggestion_one, #suggestion_two, #suggestion_three{
+    #suggestion_two{
         border-width: 0.1rem;
         height: fit-content;
         padding: 0.7rem;
@@ -911,61 +630,12 @@ section {
 
     /* skills section */
 
-    .skills_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        color: gray;
-        padding: 1% 1% 10% 1%;
-    }
-    .skills_header{
-        font-size: 2.5rem;
-        font-weight: 800;
-        padding-left: 3%;
-    }
-
-    .skill-list-body {
-        display: grid;
-        grid-template-columns: repeat(1, 0.1fr);
-        gap: 1rem;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    .skill_list {
-        padding: 0.35rem;
-        padding-left: 1rem;
-        height: fit-content;
-        width: 8.5rem;
-        box-sizing: border-box;
-        border-radius: 0.2rem;
-    }
-
     .footer_txt  {
         padding: 1.4rem;
         padding-top: 1.5rem;
         padding-left: 0;
     }
-    .working_on_container {
-        padding: 1% 1% 10% 12%;
-    }
-    .working_on_heading {
-        font-size: 2.5rem;
-        font-weight: 800;
-    }
-    .working_on_info {
-        padding: 10% 5% 1% 15%; 
-    }
 
-    .recents {
-    display: grid;
-    grid-template-columns: repeat(1, 0.5fr);
-    gap: 5rem;
-    }
-
-    .recent_card_container {
-    min-width: 350px;
-    max-width: 400px;
-    }
 }
 
 @media (max-width: 399px) {
@@ -980,7 +650,7 @@ section {
         font-size: 4.5rem;
         padding-top: 25%; /* to keep logo below the floating navbar*/
     }
-    #suggestion_one, #suggestion_two, #suggestion_three{
+    #suggestion_two{
         border-width: 0.1rem;
         height: fit-content;
         padding: 0.5rem;
@@ -993,65 +663,9 @@ section {
         flex-direction: column;
     }
 
-    .card_wrapper {
-        padding: 0.5rem;
-        height: 25rem; /* fix height for mobile devices */
-    }
-    
-    .card_container {
-        padding: 3% 3% 1% 3%;
-        justify-content: center;
-        display: grid;
-        grid-template-rows: auto auto;
-        /* gap: 1rem; */
-    }
-
-    .card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 15px;
-        padding-top:5px;
-
-        height: 90%;  /* to fit card within card_wrapper height bounds */
-        overflow-y: scroll; /* add scroll-bar*/
-        overflow-x: hidden; /* hide horizontal scrollbar */
-    }
-    .notes_txt_gradient{
-        font-size: 2.3rem;
-    }
-  
-    .skills_container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0.5rem;
-        padding-bottom: 2rem;
-    }
-
-    .skills_li_head {
-        font-size: 0.9rem;
-    }
-
-    .skill-list-body {
-        display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        gap: 0.5rem;
-        padding: 2rem 1rem 2rem 1.5rem;
-    }
-
     .section_skils {
         padding: 0 1% 0 1%;
     }
 
-    .recents {
-    display: grid;
-    grid-template-columns: repeat(1, 0.5fr);
-    gap: 5rem;
-    }
-
-    .recent_card_container {
-    min-width: 250px;
-    max-width: 300px;
-    }
     
 }
